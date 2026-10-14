@@ -19887,29 +19887,19 @@
       "timeout": 10
     },
     {
-      "name": "👖裤佬IPTV直播",
-      "type": 0,
-      "url": "https://iptv.445569.xyz/live.m3u"
-    },
-    {
       "name": "👖裤佬体育直播[备]",
       "type": 0,
       "url": "https://stymei.pages.dev/live.m3u"
     },
     {
-      "name": "👖裤佬抖音直播",
+      "name": "👖裤佬虎牙直播",
       "type": 0,
-      "url": "https://douyin.445569.xyz/live.m3u"
+      "url": "https://huya.445569.xyz/live.m3u"
     },
     {
       "name": "👖裤佬斗鱼直播",
       "type": 0,
       "url": "https://douyu.445569.xyz/live.m3u"
-    },
-    {
-      "name": "👖裤佬酷狗直播",
-      "type": 0,
-      "url": "https://kugou.445569.xyz/live.m3u"
     },
     {
       "name": "👖裤佬YY直播",
@@ -20051,6 +20041,11 @@
       "name": "☁云霄抖音直播",
       "type": 1,
       "url": "https://douyin.445569.xyz/live.m3u"
+    },
+    {
+      "name": "☁云霄虎牙直播",
+      "type": 0,
+      "url": "https://huya.445569.xyz/live.m3u"
     },
     {
       "name": "☁云霄斗鱼直播",
@@ -20613,14 +20608,6 @@
       "name": "直播电视",
       "type": 0,
       "url": "https://live.zbds.top/tv/iptv4.txt"
-    },
-    {
-      "name": "外置综合",
-      "type": 0,
-      "url": "http://tv-1.iill.top/m3u/Gather",
-      "ua": "okhttp/3.8.1",
-      "timeout": 20,
-      "playerType": 1
     },
     {
       "name": "外置综直",

@@ -46,6 +46,15 @@
       "filterable": 1
     },
     {
+      "key": "cee0fca9-1808-5017-9a69-0d9013f95b47",
+      "name": "芒果",
+      "type": 1,
+      "api": "https://mgzyz1.com/api.php/provide/vod/?ac=list",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
       "key": "b0684274-ce9e-5d4f-bf54-f61afbdaf49d",
       "name": "玉兔",
       "type": 1,
@@ -163,15 +172,6 @@
       "filterable": 1
     },
     {
-      "key": "cee0fca9-1808-5017-9a69-0d9013f95b47",
-      "name": "芒果",
-      "type": 0,
-      "api": "https://www.mgav1.cc/api.php/provide/vod/at/xml/",
-      "searchable": 2,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "f951be46-17fa-5f4f-9f41-ff25d21e8d74",
       "name": "花椒",
       "type": 0,
@@ -253,15 +253,6 @@
       "filterable": 1
     },
     {
-      "key": "天美AV",
-      "name": "天美AV",
-      "type": 1,
-      "api": "https://tmav.art/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "极致资源",
       "name": "极致资源",
       "type": 1,
@@ -329,15 +320,6 @@
       "name": "番号资源",
       "type": 1,
       "api": "http://fhapi9.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "天美AV",
-      "name": "天美AV",
-      "type": 1,
-      "api": "https://tmav.art/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0

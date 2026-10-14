@@ -863,6 +863,17 @@
       "ext": "proxy"
     },
     {
+      "key": "辣椒",
+      "name": "辣椒 | 采集",
+      "type": 1,
+      "api": "https://apilj.com/api.php/provide/vod/",
+      "playUrl": "",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "proxy"
+    },
+    {
       "key": "黄AV资源站",
       "name": "AV | 采集",
       "type": 0,

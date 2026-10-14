@@ -2890,6 +2890,15 @@
       "group": "综合-采集站"
     },
     {
+      "key": "沙鱼",
+      "name": "沙鱼 | 采集",
+      "type": 1,
+      "api": "https://shayuapi.com/api.php/provide/vod/",
+      "ext": "proxy",
+      "group": "综合-采集站",
+      "searchable": 1
+    },
+    {
       "key": "site_1787074851217",
       "name": "红牛云",
       "type": 0,
@@ -3158,6 +3167,13 @@
       "group": "综合-采集站"
     },
     {
+      "key": "*鲨鱼",
+      "name": "*鲨鱼",
+      "type": 0,
+      "api": "https://shayuapi.com/api.php/provide/vod/at/xml",
+      "group": "综合-采集站"
+    },
+    {
       "api": "https://cj.rycjapi.com/api.php/provide/vod/",
       "key": "7e324c0872c13fd329e818c33a659046",
       "name": "10-如意",
@@ -3238,6 +3254,22 @@
       "name": "👭赤铜👭",
       "type": 1,
       "api": "http://pg.cttv.vip/api.php/provide/vod/",
+      "changeable": 1,
+      "group": "综合-采集站"
+    },
+    {
+      "key": "鲨鱼影视",
+      "name": "💞鲨鱼影视💞",
+      "type": 1,
+      "api": "https://shayuzy5.com/api.php/provide/vod/",
+      "changeable": 1,
+      "group": "综合-采集站"
+    },
+    {
+      "key": "鲨鱼资源",
+      "name": "💞鲨鱼资源💞",
+      "type": 1,
+      "api": "https://shayuzy1.com/api.php/provide/vod/",
       "changeable": 1,
       "group": "综合-采集站"
     },
@@ -39861,19 +39893,6 @@
       "group": "其他"
     },
     {
-      "key": "php集合",
-      "name": "php集合",
-      "type": 4,
-      "api": "https://zhangqun1818.serv00.net/php.php",
-      "searchable": 1,
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "changeable": 1,
-      "group": "其他"
-    },
-    {
       "key": "python集合",
       "name": "python集合",
       "type": 4,
@@ -40094,19 +40113,6 @@
       "group": "其他"
     },
     {
-      "key": "影视文件播放",
-      "name": "影视文件播放",
-      "type": 4,
-      "api": "https://zhangqun1818.serv00.net/zh/2242.php",
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "searchable": 1,
-      "changeable": 0,
-      "group": "其他"
-    },
-    {
       "key": "服务器油管",
       "name": "服务器油管",
       "type": 4,
@@ -40153,19 +40159,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "group": "其他"
-    },
-    {
-      "key": "爱瓜TV",
-      "name": "爱瓜TV",
-      "type": 4,
-      "api": "https://zhangqun1818.serv00.net/aigua1.php",
-      "searchable": 1,
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "changeable": 1,
       "group": "其他"
     },
     {
@@ -43255,28 +43248,6 @@
       "group": "其他"
     },
     {
-      "key": "影视单播放",
-      "name": "[367ms|直播] 影视播放",
-      "type": 4,
-      "api": "http://zhangqun1818.serv00.net/zh/2243.php",
-      "group": "其他"
-    },
-    {
-      "key": "影视播放",
-      "name": "[367ms|直播] 老张影视",
-      "type": 4,
-      "api": "http://zhangqun1818.serv00.net/zh/2242.php",
-      "group": "其他"
-    },
-    {
-      "key": "采集集合",
-      "name": "[367ms|直播] 采集集合+",
-      "type": 4,
-      "api": "http://zhangqun1818.serv00.net/cj/cjjh.php",
-      "ext": "0",
-      "group": "其他"
-    },
-    {
       "key": "耐看-2",
       "name": "[367ms|直播] 👀耐看┃",
       "type": 3,
@@ -43482,30 +43453,6 @@
       "group": "其他"
     },
     {
-      "key": "油管清单播放",
-      "name": "油管清单播放",
-      "type": 4,
-      "api": "https://zhangqun1818.serv00.net/zh/yt/2243.php",
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "changeable": 1,
-      "group": "其他"
-    },
-    {
-      "key": "清单播放",
-      "name": "清单播放",
-      "type": 4,
-      "api": "https://zhangqun1818.serv00.net/zh/2243.php",
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "changeable": 1,
-      "group": "其他"
-    },
-    {
       "key": "青麦",
       "name": "青麦",
       "type": 3,
@@ -43577,26 +43524,10 @@
       "group": "其他"
     },
     {
-      "key": "PHPPHP",
-      "name": "👭PHP聚合👭",
-      "type": 4,
-      "api": "http://zhangqun1818.serv00.net/php.php",
-      "changeable": 1,
-      "group": "其他"
-    },
-    {
       "key": "PigAV.py",
       "name": "👭PigAV👭",
       "type": 3,
       "api": "https://gh-proxy.org/https://raw.githubusercontent.com/wliqi495-create/jaychouqq/refs/heads/main/yingshi/py3/PigAV.py",
-      "group": "其他"
-    },
-    {
-      "key": "jsPHP",
-      "name": "👭js聚合👭",
-      "type": 4,
-      "api": "http://zhangqun1818.serv00.net/js.php",
-      "changeable": 1,
       "group": "其他"
     },
     {
@@ -43611,14 +43542,6 @@
       "name": "👭pp5👭",
       "type": 3,
       "api": "https://gh-proxy.org/https://raw.githubusercontent.com/wliqi495-create/jaychouqq/refs/heads/main/yingshi/py1/pp.py",
-      "group": "其他"
-    },
-    {
-      "key": "pyPHP",
-      "name": "👭py聚合👭",
-      "type": 4,
-      "api": "http://zhangqun1818.serv00.net/py.php",
-      "changeable": 1,
       "group": "其他"
     },
     {
@@ -43669,14 +43592,6 @@
       "name": "👭企鹅体育👭",
       "type": 3,
       "api": "https://gh-proxy.org/https://raw.githubusercontent.com/wliqi495-create/jaychouqq/refs/heads/main/yingshi/py/企鹅体育.py",
-      "group": "其他"
-    },
-    {
-      "key": "克隆PHP",
-      "name": "👭克隆👭",
-      "type": 4,
-      "api": "http://zhangqun1818.serv00.net/klhj.php",
-      "changeable": 1,
       "group": "其他"
     },
     {
@@ -43779,14 +43694,6 @@
       "name": "👭苹果视频👭",
       "type": 4,
       "api": "https://zhangqun19.serv00.net/pingguo.php",
-      "changeable": 1,
-      "group": "其他"
-    },
-    {
-      "key": "荐片33333",
-      "name": "👭荐片33333👭",
-      "type": 4,
-      "api": "http://zhangqun1818.serv00.net/jianpian.php",
       "changeable": 1,
       "group": "其他"
     },
@@ -46580,7 +46487,7 @@
       "group": "综合-采集站"
     },
     {
-      "key": "沙鱼",
+      "key": "hebijunge-recommended_沙鱼",
       "name": "沙鱼 | 采集",
       "type": 1,
       "api": "https://shayuapi.com/api.php/provide/vod/",
@@ -59868,7 +59775,7 @@
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_php集合",
+      "key": "php集合",
       "name": "php集合",
       "type": 4,
       "api": "https://zhangqun1818.serv00.net/php.php",
@@ -60003,7 +59910,7 @@
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_影视文件播放",
+      "key": "影视文件播放",
       "name": "影视文件播放",
       "type": 4,
       "api": "https://zhangqun1818.serv00.net/zh/2242.php",
@@ -60065,7 +59972,7 @@
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_爱瓜TV",
+      "key": "爱瓜TV",
       "name": "爱瓜TV",
       "type": 4,
       "api": "https://zhangqun1818.serv00.net/aigua1.php",
@@ -63095,21 +63002,21 @@
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_影视单播放",
+      "key": "影视单播放",
       "name": "[367ms|直播] 影视播放",
       "type": 4,
       "api": "http://zhangqun1818.serv00.net/zh/2243.php",
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_影视播放",
+      "key": "影视播放",
       "name": "[367ms|直播] 老张影视",
       "type": 4,
       "api": "http://zhangqun1818.serv00.net/zh/2242.php",
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_采集集合",
+      "key": "采集集合",
       "name": "[367ms|直播] 采集集合+",
       "type": 4,
       "api": "http://zhangqun1818.serv00.net/cj/cjjh.php",
@@ -63252,7 +63159,7 @@
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_油管清单播放",
+      "key": "油管清单播放",
       "name": "油管清单播放",
       "type": 4,
       "api": "https://zhangqun1818.serv00.net/zh/yt/2243.php",
@@ -63264,7 +63171,7 @@
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_清单播放",
+      "key": "清单播放",
       "name": "清单播放",
       "type": 4,
       "api": "https://zhangqun1818.serv00.net/zh/2243.php",
@@ -63332,7 +63239,7 @@
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_PHPPHP",
+      "key": "PHPPHP",
       "name": "👭PHP聚合👭",
       "type": 4,
       "api": "http://zhangqun1818.serv00.net/php.php",
@@ -63347,7 +63254,7 @@
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_jsPHP",
+      "key": "jsPHP",
       "name": "👭js聚合👭",
       "type": 4,
       "api": "http://zhangqun1818.serv00.net/js.php",
@@ -63362,7 +63269,7 @@
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_pyPHP",
+      "key": "pyPHP",
       "name": "👭py聚合👭",
       "type": 4,
       "api": "http://zhangqun1818.serv00.net/py.php",
@@ -63420,7 +63327,7 @@
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_克隆PHP",
+      "key": "克隆PHP",
       "name": "👭克隆👭",
       "type": 4,
       "api": "http://zhangqun1818.serv00.net/klhj.php",
@@ -63507,7 +63414,7 @@
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_荐片33333",
+      "key": "荐片33333",
       "name": "👭荐片33333👭",
       "type": 4,
       "api": "http://zhangqun1818.serv00.net/jianpian.php",
@@ -71008,6 +70915,15 @@
       "filterable": 1
     },
     {
+      "key": "cee0fca9-1808-5017-9a69-0d9013f95b47",
+      "name": "芒果",
+      "type": 1,
+      "api": "https://mgzyz1.com/api.php/provide/vod/?ac=list",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
       "key": "b0684274-ce9e-5d4f-bf54-f61afbdaf49d",
       "name": "玉兔",
       "type": 1,
@@ -71125,15 +71041,6 @@
       "filterable": 1
     },
     {
-      "key": "cee0fca9-1808-5017-9a69-0d9013f95b47",
-      "name": "芒果",
-      "type": 0,
-      "api": "https://www.mgav1.cc/api.php/provide/vod/at/xml/",
-      "searchable": 2,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "2286c2fd-8e65-52d2-9a7a-f21ec0cae006",
       "name": "辣椒2",
       "type": 0,
@@ -71206,15 +71113,6 @@
       "filterable": 1
     },
     {
-      "key": "天美AV",
-      "name": "天美AV",
-      "type": 1,
-      "api": "https://tmav.art/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "极致资源",
       "name": "极致资源",
       "type": 1,
@@ -71282,15 +71180,6 @@
       "name": "番号资源",
       "type": 1,
       "api": "http://fhapi9.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "91i55and0-r18_天美AV",
-      "name": "天美AV",
-      "type": 1,
-      "api": "https://tmav.art/api.php/provide/vod/",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -73370,6 +73259,17 @@
       "ext": "proxy"
     },
     {
+      "key": "dongge0504-xhd_辣椒",
+      "name": "辣椒 | 采集",
+      "type": 1,
+      "api": "https://apilj.com/api.php/provide/vod/",
+      "playUrl": "",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "proxy"
+    },
+    {
       "key": "dongge0504-xhd_黄AV资源站",
       "name": "AV | 采集",
       "type": 0,
@@ -74340,6 +74240,17 @@
       "ext": "proxy"
     },
     {
+      "key": "dongge0504-funfull_辣椒",
+      "name": "辣椒 | 采集",
+      "type": 1,
+      "api": "https://apilj.com/api.php/provide/vod/",
+      "playUrl": "",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "proxy"
+    },
+    {
       "key": "dongge0504-funfull_黄AV资源站",
       "name": "AV | 采集",
       "type": 0,
@@ -74816,20 +74727,6 @@
       "logo": "http://127.0.0.1:10079/p/0/proxy/https://cdn.jsdmirror.com/gh/fanmingming/live@master/tv/{name}.png"
     },
     {
-      "name": "XtreamCode",
-      "api": "csp_XtreamCode",
-      "url": "http://iptv.icsnleb.com:25461/player_api.php?username=12&password=12",
-      "epg": "http://iptv.icsnleb.com:25461/xmltv.php?username=12&password=12",
-      "ext": {
-        "live": true,
-        "vod": true,
-        "formats": [
-          "m3u8",
-          "ts"
-        ]
-      }
-    },
-    {
       "name": "BMCH",
       "type": "0",
       "pass": true,
@@ -75235,11 +75132,6 @@
       "timeout": 10
     },
     {
-      "name": "👖裤佬IPTV直播",
-      "type": 0,
-      "url": "https://iptv.445569.xyz/live.m3u"
-    },
-    {
       "name": "👖裤佬体育直播[备]",
       "type": 0,
       "url": "https://stymei.pages.dev/live.m3u"
@@ -75248,11 +75140,6 @@
       "name": "👖裤佬斗鱼直播",
       "type": 0,
       "url": "https://douyu.445569.xyz/live.m3u"
-    },
-    {
-      "name": "👖裤佬酷狗直播",
-      "type": 0,
-      "url": "https://kugou.445569.xyz/live.m3u"
     },
     {
       "name": "👖裤佬YY直播",
@@ -75391,19 +75278,14 @@
       "url": "http://tv123.vvvv.ee/tv.m3u"
     },
     {
-      "name": "☁云霄抖音直播",
-      "type": 1,
-      "url": "https://douyin.445569.xyz/live.m3u"
+      "name": "☁云霄虎牙直播",
+      "type": 0,
+      "url": "https://huya.445569.xyz/live.m3u"
     },
     {
       "name": "☁云霄斗鱼直播",
       "type": 0,
       "url": "https://douyu.445569.xyz/live.m3u"
-    },
-    {
-      "name": "☁云霄酷狗直播",
-      "type": 0,
-      "url": "https://kugou.445569.xyz/live.m3u"
     },
     {
       "name": "☁云霄YY直播",
@@ -76087,9 +75969,33 @@
       "playerType": 1
     },
     {
-      "name": "👖裤佬抖音直播",
+      "name": "XtreamCode",
+      "api": "csp_XtreamCode",
+      "url": "http://iptv.icsnleb.com:25461/player_api.php?username=12&password=12",
+      "epg": "http://iptv.icsnleb.com:25461/xmltv.php?username=12&password=12",
+      "ext": {
+        "live": true,
+        "vod": true,
+        "formats": [
+          "m3u8",
+          "ts"
+        ]
+      }
+    },
+    {
+      "name": "👖裤佬虎牙直播",
       "type": 0,
+      "url": "https://huya.445569.xyz/live.m3u"
+    },
+    {
+      "name": "☁云霄抖音直播",
+      "type": 1,
       "url": "https://douyin.445569.xyz/live.m3u"
+    },
+    {
+      "name": "☁云霄酷狗直播",
+      "type": 0,
+      "url": "https://kugou.445569.xyz/live.m3u"
     },
     {
       "name": "直播",
