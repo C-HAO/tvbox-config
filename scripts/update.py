@@ -55,6 +55,8 @@ PROBE_WORKERS = healthcheck.env_int("PROBE_WORKERS", 16)     # 探测并发
 LIVE_CHANNEL_PROBES = healthcheck.env_int("LIVE_CHANNEL_PROBES", 0, minimum=0)
 # 默认严格：源全部地址失败时不再沿用旧缓存（只生成本次真正抓取成功的源）
 ALLOW_STALE_SOURCES = healthcheck.env_flag("ALLOW_STALE_SOURCES", False)
+# README 状态区是否写各源明细（默认只写汇总，避免对外暴露源名称/地址）
+README_STATUS_DETAILS = healthcheck.env_flag("README_STATUS_DETAILS", False)
 
 # 判定"像 TVBox 单仓配置"的顶层字段
 TVBOX_KEYS = ("sites", "spiders", "lives", "store", "exts", "parses", "flags")
@@ -241,18 +243,20 @@ def update_readme(status, ok_count, total):
     lines = []
     lines.append(f"> 🔄 最近更新：{status['updated_at']}（北京时间） · 成功 **{ok_count}/{total}** 个源")
     lines.append("")
-    lines.append("| 配置源 | 状态 | 使用地址 |")
-    lines.append("| --- | --- | --- |")
-    for s in status["sources"]:
-        if s.get("cached"):
-            lines.append(f"| {s['name']} | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |")
-        elif s["ok"]:
-            lines.append(f"| {s['name']} | ✅ 成功 | `{s['used_url']}` |")
-        else:
-            err = (s.get("error") or "").replace("|", "/")
-            if len(err) > 60:
-                err = err[:57] + "..."
-            lines.append(f"| {s['name']} | ❌ 失败 | {err} |")
+    # 默认只写汇总，不对外暴露各源名称 / 地址 / 报错；设 README_STATUS_DETAILS=1 才写明细
+    if README_STATUS_DETAILS:
+        lines.append("| 配置源 | 状态 | 使用地址 |")
+        lines.append("| --- | --- | --- |")
+        for s in status["sources"]:
+            if s.get("cached"):
+                lines.append(f"| {s['name']} | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |")
+            elif s["ok"]:
+                lines.append(f"| {s['name']} | ✅ 成功 | `{s['used_url']}` |")
+            else:
+                err = (s.get("error") or "").replace("|", "/")
+                if len(err) > 60:
+                    err = err[:57] + "..."
+                lines.append(f"| {s['name']} | ❌ 失败 | {err} |")
     block = "\n".join(lines)
 
     prefix = readme.split(STATUS_START, 1)[0]

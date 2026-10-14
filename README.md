@@ -3,7 +3,7 @@
 ![配置状态](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOWNER%2FREPO%2FBRANCH%2Foutput%2Fshield.json)
 ![更新频率](https://img.shields.io/badge/%E6%9B%B4%E6%96%B0-%E6%AF%8F%E5%A4%A9%202%20%E6%AC%A1-blue)
 
-聚合 **肥猫、饭太硬、王二小、讴歌（欧歌）、摸鱼、OK、小米、巧记、4K小盒子、潇洒** 等多个影视仓 / TVBox 单仓配置，通过 **GitHub Actions 定时自动更新**，并把结果直接提交回本仓库，供影视仓、TVBox、OK影视等软件随时拉取最新接口。
+聚合多个公开的影视仓 / TVBox 单仓配置，通过 **GitHub Actions 定时自动更新**，把结果提交回本仓库并发布为 GitHub Pages，供影视仓、TVBox、OK影视等软件随时拉取最新接口。
 
 > 所有配置均来自互联网公开分享，版权归原作者所有；本仓库仅做聚合与镜像，仅供学习交流，请勿商用。
 
@@ -13,10 +13,6 @@
 
 <!-- STATUS_START -->
 > 🔄 最近更新：&lt;由工作流自动写入&gt; · 成功 **&lt;N/M&gt;** 个源
-
-| 配置源 | 状态 | 使用地址 |
-| --- | --- | --- |
-| （由工作流自动写入，仅本地/私有部署可见） | | |
 <!-- STATUS_END -->
 
 ## 二、仓库结构
@@ -32,9 +28,8 @@ repo/
 │   ├── 多仓订阅.json               # 多仓聚合订阅（推荐，App 内可切换各源）
 │   ├── 单仓聚合.json               # 单仓聚合（所有源 sites 合并成一个，开箱即用）
 │   ├── shield.json                # shields.io 状态徽章数据
-│   ├── status.json                # 各源更新状态（机器可读）
-│   ├── feimao.json / fantaiying.json / ...  # 各源独立配置
-│   └── ...
+│   ├── status.json                # 各源更新状态（机器可读，含检测报告）
+│   └── &lt;源id&gt;.json                # 各源独立配置（文件名对应 sources.json 的 id）
 ├── requirements.txt
 └── README.md
 ```
@@ -48,16 +43,7 @@ repo/
 | **多仓订阅（推荐）** | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/多仓订阅.json` | App 内可在各源之间切换 |
 | **在线浏览站（Pages）** | `https://OWNER.github.io/REPO/` | 网页里浏览 / 复制 / 下载 `output/` 下所有配置 |
 | **单仓聚合** | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/单仓聚合.json` | 所有源站点合并成一个，无需切换 |
-| 单仓 · 肥猫 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/feimao.json` | 单独使用某一个源 |
-| 单仓 · 饭太硬 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/fantaiying.json` | |
-| 单仓 · 王二小 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/wangerxiao.json` | |
-| 单仓 · 讴歌 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/ouge.json` | |
-| 单仓 · 摸鱼 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/moyu.json` | |
-| 单仓 · OK | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/ok.json` | |
-| 单仓 · 小米 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/xiaomi.json` | |
-| 单仓 · 巧记 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/qiaoji.json` | |
-| 单仓 · 4K小盒子 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/4k.json` | |
-| 单仓 · 潇洒 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/xiaosa.json` | |
+| 单仓 · 单个源 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/&lt;源id&gt;.json` | 单独使用某一个源，文件名即 `sources.json` 里的 `id` |
 
 > 多仓订阅与单仓文件里的地址由脚本根据 `GITHUB_REPOSITORY` 环境变量自动生成。若国内直连 raw.githubusercontent.com 慢，可套一层 `ghproxy` / `gh-proxy` 等加速前缀。
 
@@ -68,7 +54,7 @@ repo/
 - 推送后，GitHub 自动识别 `.github/workflows/update.yml`。
 - 默认每天 **02:00 和 14:00（UTC，即北京时间 10:00 和 22:00）** 自动更新一次。
 - 也可在 **Actions → Auto Update TVBox Configs → Run workflow** 手动触发。
-- 更新结果自动提交回当前分支（默认分支），README 状态表与徽章同步刷新。
+- 更新结果自动提交回当前分支（默认分支），README 状态区（默认仅汇总）与徽章同步刷新。
 - 工作流使用内置 `GITHUB_TOKEN`，无需配置任何密钥。
 
 ## 五、自定义配置源
@@ -100,7 +86,7 @@ REPO=OWNER/REPO BRANCH=BRANCH python scripts/update.py
 
 ## 七、脚本特性
 
-- **中文域名自动转 punycode**：`饭太硬.com` → `xn--sss604efuw.com`，避免 DNS 解析失败。
+- **中文域名自动转 punycode**：`中文域名.com` → `xn--fiq228c.com`，避免 DNS 解析失败。
 - **多地址回退**：每个源按顺序尝试主/备用地址，单个地址失败不影响其他源。
 - **智能重试**：仅对超时、连接错误、空响应等瞬态问题退避重试；4xx/5xx 等确定性失败直接跳过。
 - **反爬兼容**：使用简洁 UA（部分接口对完整浏览器 UA 下发挑战页），自动剔除 JSON 内嵌的 `//` 注释，兼容未转义控制字符。
@@ -110,7 +96,7 @@ REPO=OWNER/REPO BRANCH=BRANCH python scripts/update.py
   - 直播级：对 `lives[]` 的播放列表地址、以及内联 `channels[].urls`（含 `proxy://...ext=<url>`）做可达性探测，全部不可达的 lives 项被剔除。
   - 可通过环境变量调整：`CHECK_SITES`、`CHECK_LIVES`（开关）、`PROBE_TIMEOUT`（默认 8 秒）、`PROBE_WORKERS`（默认 16）、`LIVE_CHANNEL_PROBES`（每个 lives 项最多探测的内联频道数，默认 0=不限制）、`ALLOW_STALE_SOURCES=1`（恢复"失败沿用缓存"）。每次检测结果写入 `status.json` 的 `sources[].checks`。
 - **聚合单仓**：把所有成功源的 `sites` 按 key 去重合并（重复 key 自动加源前缀），`lives/parses` 等列表合并去重。
-- **状态可视化**：每次更新自动刷新 README 状态表与 shields.io 徽章。
+- **状态可视化**：每次更新自动刷新 shields.io 徽章；README 状态区默认只写汇总（`成功 N/M 个源`），不暴露各源名称与地址；需要显示明细时设环境变量 `README_STATUS_DETAILS=1`（完整状态始终保存在 `status.json`）。
 - **部分成功可用**：只要有一个源成功就产出可用订阅，失败源记录在 `status.json` 与 README 状态表。
 
 ## 八、常见问题

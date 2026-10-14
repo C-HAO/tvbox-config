@@ -1,0 +1,21 @@
+{
+  "spider": "",
+  "sites": [
+    {
+      "key": "huangguo",
+      "name": "黄果短剧",
+      "type": 3,
+      "api": "https://raw.giteeusercontent.com/wx08/tvbox/raw/master/huangguo_gitee.js",
+      "searchable": 1,
+      "filterable": 1,
+      "quickSearch": 1,
+      "ext": ""
+    }
+  ],
+  "parses": [],
+  "lives": [],
+  "flags": [],
+  "rules": [],
+  "hosts": [],
+  "ads": []
+}
