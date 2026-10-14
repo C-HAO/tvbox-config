@@ -1,6 +1,6 @@
 # 影视仓配置聚合仓库（TVBox Config Aggregator）
 
-![配置状态](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FC-HAO%2Ftvbox-config%2Fdevelop%2Foutput%2Fshield.json)
+![配置状态](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOWNER%2FREPO%2FBRANCH%2Foutput%2Fshield.json)
 ![更新频率](https://img.shields.io/badge/%E6%9B%B4%E6%96%B0-%E6%AF%8F%E5%A4%A9%202%20%E6%AC%A1-blue)
 
 聚合 **肥猫、饭太硬、王二小、讴歌（欧歌）、摸鱼、OK、小米、巧记、4K小盒子、潇洒** 等多个影视仓 / TVBox 单仓配置，通过 **GitHub Actions 定时自动更新**，并把结果直接提交回本仓库，供影视仓、TVBox、OK影视等软件随时拉取最新接口。
@@ -12,26 +12,17 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-10-14 15:10:27（北京时间） · 成功 **4/10** 个源
+> 🔄 最近更新：&lt;由工作流自动写入&gt; · 成功 **&lt;N/M&gt;** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
-| 肥猫 | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
-| 饭太硬 | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
-| 王二小 | ✅ 成功 | `https://d.kstore.dev/download/9280/wex.json` |
-| 讴歌 | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
-| 摸鱼 | ❌ 失败 | HTTPConnectionPool(host='xn--c5wa.xn--v4q818bf34b.top', p... |
-| OK | ❌ 失败 | HTTPConnectionPool(host='ok321.top', port=80): Max retrie... |
-| 小米 | ❌ 失败 | HTTPConnectionPool(host='miqk.cc', port=80): Max retries ... |
-| 巧记 | ❌ 失败 | HTTPConnectionPool(host='cdn.qiaoji8.com', port=80): Max ... |
-| 4K小盒子 | ✅ 成功 | `http://xhztv.top/4k.json` |
-| 潇洒 | ❌ 失败 | 404 Client Error:  for url: https://9877.kstore.space/Ano... |
+| （由工作流自动写入，仅本地/私有部署可见） | | |
 <!-- STATUS_END -->
 
 ## 二、仓库结构
 
 ```
-tvbox-config/
+repo/
 ├── .github/workflows/update.yml   # GitHub Actions：更新配置并发布 GitHub Pages
 ├── config/sources.json            # 配置源列表（主地址 + 备用地址），可自行增删改
 ├── scripts/update.py              # 核心更新脚本（下载→校验→合并→落盘→更新状态）
@@ -54,30 +45,30 @@ tvbox-config/
 
 | 类型 | 地址 | 说明 |
 | --- | --- | --- |
-| **多仓订阅（推荐）** | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/多仓订阅.json` | App 内可在各源之间切换 |
-| **在线浏览站（Pages）** | `https://c-hao.github.io/tvbox-config/` | 网页里浏览 / 复制 / 下载 `output/` 下所有配置 |
-| **单仓聚合** | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/单仓聚合.json` | 所有源站点合并成一个，无需切换 |
-| 单仓 · 肥猫 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/feimao.json` | 单独使用某一个源 |
-| 单仓 · 饭太硬 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fantaiying.json` | |
-| 单仓 · 王二小 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/wangerxiao.json` | |
-| 单仓 · 讴歌 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/ouge.json` | |
-| 单仓 · 摸鱼 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/moyu.json` | |
-| 单仓 · OK | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/ok.json` | |
-| 单仓 · 小米 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/xiaomi.json` | |
-| 单仓 · 巧记 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/qiaoji.json` | |
-| 单仓 · 4K小盒子 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/4k.json` | |
-| 单仓 · 潇洒 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/xiaosa.json` | |
+| **多仓订阅（推荐）** | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/多仓订阅.json` | App 内可在各源之间切换 |
+| **在线浏览站（Pages）** | `https://OWNER.github.io/REPO/` | 网页里浏览 / 复制 / 下载 `output/` 下所有配置 |
+| **单仓聚合** | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/单仓聚合.json` | 所有源站点合并成一个，无需切换 |
+| 单仓 · 肥猫 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/feimao.json` | 单独使用某一个源 |
+| 单仓 · 饭太硬 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/fantaiying.json` | |
+| 单仓 · 王二小 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/wangerxiao.json` | |
+| 单仓 · 讴歌 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/ouge.json` | |
+| 单仓 · 摸鱼 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/moyu.json` | |
+| 单仓 · OK | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/ok.json` | |
+| 单仓 · 小米 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/xiaomi.json` | |
+| 单仓 · 巧记 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/qiaoji.json` | |
+| 单仓 · 4K小盒子 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/4k.json` | |
+| 单仓 · 潇洒 | `https://raw.githubusercontent.com/OWNER/REPO/BRANCH/output/xiaosa.json` | |
 
 > 多仓订阅与单仓文件里的地址由脚本根据 `GITHUB_REPOSITORY` 环境变量自动生成。若国内直连 raw.githubusercontent.com 慢，可套一层 `ghproxy` / `gh-proxy` 等加速前缀。
 
-> Pages 在线浏览站需要在仓库 `Settings → Pages → Build and deployment → Source` 选择 **GitHub Actions**；推荐把默认分支设为 `develop`，与更新工作流保持一致。
+> Pages 在线浏览站需要在仓库 `Settings → Pages → Build and deployment → Source` 选择 **GitHub Actions**；推荐把默认分支与更新工作流保持一致。
 
 ## 四、自动更新机制
 
 - 推送后，GitHub 自动识别 `.github/workflows/update.yml`。
 - 默认每天 **02:00 和 14:00（UTC，即北京时间 10:00 和 22:00）** 自动更新一次。
 - 也可在 **Actions → Auto Update TVBox Configs → Run workflow** 手动触发。
-- 更新结果自动提交回 `main` 分支，README 状态表与徽章同步刷新。
+- 更新结果自动提交回当前分支（默认分支），README 状态表与徽章同步刷新。
 - 工作流使用内置 `GITHUB_TOKEN`，无需配置任何密钥。
 
 ## 五、自定义配置源
@@ -98,13 +89,13 @@ tvbox-config/
 - `id`：输出文件名（建议英文小写）。
 - `name`：在多仓订阅与状态表中展示的名字。
 - `urls`：依次尝试的地址列表，第一个成功的会被使用；可按"主地址在前、备用在后"排列。
-- 修改后推送到 `main` 分支即会自动触发一次更新。
+- 修改后推送到默认分支即会自动触发一次更新。
 
 ## 六、本地手动更新（可选）
 
 ```bash
 pip install -r requirements.txt
-REPO=C-HAO/tvbox-config BRANCH=develop python scripts/update.py
+REPO=OWNER/REPO BRANCH=BRANCH python scripts/update.py
 ```
 
 ## 七、脚本特性
