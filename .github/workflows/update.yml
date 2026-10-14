@@ -10,6 +10,7 @@ name: Auto Update TVBox Configs
   # 修改配置或脚本后 push 时触发（仅监听 config/scripts，避免自动提交 output/ 引发死循环）
   push:
     branches:
+      - develop
       - main
     paths:
       - "config/**"
@@ -53,6 +54,6 @@ jobs:
             echo "::notice::没有内容变化，跳过提交"
           else
             git commit -m "chore: 自动更新影视仓配置 $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-            git push origin main
-            echo "::notice::配置已更新并推送到 main 分支"
+            git push origin HEAD:${{ github.ref_name }}
+            echo "::notice::配置已更新并推送到 ${{ github.ref_name }} 分支"
           fi

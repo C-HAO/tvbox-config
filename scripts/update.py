@@ -281,7 +281,13 @@ def main() -> int:
         or os.environ.get("REPO")
         or DEFAULT_REPO
     )
-    raw_base = f"https://raw.githubusercontent.com/{repo}/main/output"
+    # 结果分支：跟随触发分支（默认 develop），本地可用 BRANCH 覆盖
+    branch = (
+        os.environ.get("BRANCH")
+        or os.environ.get("GITHUB_REF_NAME")
+        or "develop"
+    )
+    raw_base = f"https://raw.githubusercontent.com/{repo}/{branch}/output"
 
     status = {"updated_at": now_str, "repo": repo, "sources": []}
     subscriptions = []
