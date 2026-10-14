@@ -3,3 +3,6 @@ __pycache__/
 *.py[cod]
 .venv/
 venv/
+
+# GitHub Pages 构建产物（由工作流生成，不提交）
+pages-site/

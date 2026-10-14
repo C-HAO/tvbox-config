@@ -17,9 +17,11 @@ name: Auto Update TVBox Configs
       - "scripts/**"
       - "requirements.txt"
 
-# 赋予 GITHUB_TOKEN 写仓库权限，用于把更新结果提交回仓库
+# 赋予 GITHUB_TOKEN 写仓库权限，并把聚合结果发布到 GitHub Pages
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   update:
@@ -43,6 +45,11 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run update script
+        env:
+          # 健康检测：只生成有效源（默认开启，可按需调整）
+          CHECK_SITES: "1"
+          CHECK_LIVES: "1"
+          # ALLOW_STALE_SOURCES: "1"   # 取消注释可恢复“失败沿用旧缓存”
         run: python scripts/update.py
 
       - name: Commit and push changes
@@ -57,3 +64,35 @@ jobs:
             git push origin HEAD:${{ github.ref_name }}
             echo "::notice::配置已更新并推送到 ${{ github.ref_name }} 分支"
           fi
+
+      # 构建并上传 GitHub Pages 站点（浏览 / 分发 output/*.json）
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build Pages site
+        run: |
+          python scripts/build_pages.py \
+            --destination pages-site \
+            --base-url "${{ steps.pages.outputs.base_url }}"
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: pages-site
+
+  deploy-pages:
+    needs: [update]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

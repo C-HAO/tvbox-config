@@ -7,7 +7,9 @@
   1. 读取 config/sources.json 中的配置源列表
   2. 对每个源依次尝试"主线 + 备用"多个地址，自动做中文域名 punycode 转换
   3. 校验返回内容是否为合法的 TVBox/影视仓 单仓配置（包含 sites/spiders/lives 等字段）
-  4. 将每个源的最新配置保存到 output/<id>.json
+  4. 健康检测（scripts/healthcheck.py）：探测 sites 的 HTTP 接口与 lives 的直播地址，
+     剔除无响应项；源的全部地址抓取失败时默认不再沿用旧缓存（严格模式）
+  5. 将每个源的最新配置保存到 output/<id>.json
   5. 生成多仓订阅文件 output/多仓订阅.json（可直接填进影视仓的"订阅"或"多仓"）
   6. 生成聚合单仓 output/单仓聚合.json（所有源 sites/lives/parses 合并去重）
   7. 生成 shields 徽章 output/shield.json，并把各源状态写回 README
@@ -26,6 +28,9 @@ import urllib.parse
 
 import requests
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import healthcheck  # noqa: E402  (与 update.py 同目录)
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG_FILE = os.path.join(ROOT, "config", "sources.json")
 OUTPUT_DIR = os.path.join(ROOT, "output")
@@ -40,6 +45,16 @@ MAX_RETRIES = 2  # 单个地址最大尝试次数（仅对超时/连接类瞬态
 RETRY_BACKOFF = 3  # 重试基础等待秒数
 URL_INTERVAL = 1.5  # 每个地址之间的小间隔秒数（降低被限流概率）
 SOURCE_INTERVAL = 3  # 每个源之间的间隔秒数（降低被限流概率）
+
+# 健康检测开关（可用环境变量覆盖）
+CHECK_SITES = healthcheck.env_flag("CHECK_SITES", True)      # 探测 sites 里的 HTTP 接口
+CHECK_LIVES = healthcheck.env_flag("CHECK_LIVES", True)      # 探测 lives 里的直播地址
+PROBE_TIMEOUT = healthcheck.env_int("PROBE_TIMEOUT", 8)      # 单个探测超时（秒）
+PROBE_WORKERS = healthcheck.env_int("PROBE_WORKERS", 16)     # 探测并发
+# 每个 lives 项最多探测多少条内联频道地址；0 = 不限制
+LIVE_CHANNEL_PROBES = healthcheck.env_int("LIVE_CHANNEL_PROBES", 0, minimum=0)
+# 默认严格：源全部地址失败时不再沿用旧缓存（只生成本次真正抓取成功的源）
+ALLOW_STALE_SOURCES = healthcheck.env_flag("ALLOW_STALE_SOURCES", False)
 
 # 判定"像 TVBox 单仓配置"的顶层字段
 TVBOX_KEYS = ("sites", "spiders", "lives", "store", "exts", "parses", "flags")
@@ -305,6 +320,16 @@ def main() -> int:
         for url in urls:
             try:
                 data = fetch_config(url)
+                report = healthcheck.filter_config(
+                    data,
+                    url,
+                    check_sites=CHECK_SITES,
+                    check_lives=CHECK_LIVES,
+                    timeout=PROBE_TIMEOUT,
+                    workers=PROBE_WORKERS,
+                    max_live_probes=LIVE_CHANNEL_PROBES,
+                )
+                entry["checks"] = report
                 out_path = os.path.join(OUTPUT_DIR, f"{sid}.json")
                 with open(out_path, "w", encoding="utf-8") as f:
                     json.dump(data, f, ensure_ascii=False, indent=2)
@@ -317,7 +342,13 @@ def main() -> int:
                 fetched.append((sid, name, data))
                 ok_count += 1
                 saved = True
-                print(f"[OK]   {name} <- {url}")
+                sites_info = report.get("sites", {})
+                lives_info = report.get("lives", {})
+                print(
+                    f"[OK]   {name} <- {url}  "
+                    f"(sites -{sites_info.get('dropped', 0)}/{sites_info.get('checked', 0)}"
+                    f", lives -{lives_info.get('dropped', 0)}/{lives_info.get('checked', 0)})"
+                )
                 break
             except Exception as e:  # noqa: BLE001
                 print(f"[FAIL] {name}  {url}  ->  {e}")
@@ -327,9 +358,9 @@ def main() -> int:
             time.sleep(URL_INTERVAL)
 
         if not saved:
-            # 所有地址都失败：尝试使用上一次成功抓取的缓存文件
+            # 严格模式（默认）：全部地址失败即视为无效源，不沿用旧缓存
             cache_path = os.path.join(OUTPUT_DIR, f"{sid}.json")
-            if os.path.exists(cache_path):
+            if ALLOW_STALE_SOURCES and os.path.exists(cache_path):
                 try:
                     with open(cache_path, "r", encoding="utf-8") as f:
                         cached = json.load(f)

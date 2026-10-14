@@ -1,6 +1,6 @@
 # 影视仓配置聚合仓库（TVBox Config Aggregator）
 
-![配置状态](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FLightconer%2Ftvbox-ysc-config%2Fmain%2Foutput%2Fshield.json)
+![配置状态](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FC-HAO%2Ftvbox-config%2Fdevelop%2Foutput%2Fshield.json)
 ![更新频率](https://img.shields.io/badge/%E6%9B%B4%E6%96%B0-%E6%AF%8F%E5%A4%A9%202%20%E6%AC%A1-blue)
 
 聚合 **肥猫、饭太硬、王二小、讴歌（欧歌）、摸鱼、OK、小米、巧记、4K小盒子、潇洒** 等多个影视仓 / TVBox 单仓配置，通过 **GitHub Actions 定时自动更新**，并把结果直接提交回本仓库，供影视仓、TVBox、OK影视等软件随时拉取最新接口。
@@ -31,10 +31,12 @@
 ## 二、仓库结构
 
 ```
-tvbox-ysc-config/
-├── .github/workflows/update.yml   # GitHub Actions 自动更新工作流
+tvbox-config/
+├── .github/workflows/update.yml   # GitHub Actions：更新配置并发布 GitHub Pages
 ├── config/sources.json            # 配置源列表（主地址 + 备用地址），可自行增删改
 ├── scripts/update.py              # 核心更新脚本（下载→校验→合并→落盘→更新状态）
+├── scripts/healthcheck.py         # 健康检测（站点接口 / 直播地址可用性）
+├── scripts/build_pages.py         # 把 output/*.json 打包成 GitHub Pages 站点
 ├── output/                        # 更新产物（由脚本自动生成并提交）
 │   ├── 多仓订阅.json               # 多仓聚合订阅（推荐，App 内可切换各源）
 │   ├── 单仓聚合.json               # 单仓聚合（所有源 sites 合并成一个，开箱即用）
@@ -52,20 +54,23 @@ tvbox-ysc-config/
 
 | 类型 | 地址 | 说明 |
 | --- | --- | --- |
-| **多仓订阅（推荐）** | `https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/多仓订阅.json` | App 内可在各源之间切换 |
-| **单仓聚合** | `https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/单仓聚合.json` | 所有源站点合并成一个，无需切换 |
-| 单仓 · 肥猫 | `https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/feimao.json` | 单独使用某一个源 |
-| 单仓 · 饭太硬 | `https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/fantaiying.json` | |
-| 单仓 · 王二小 | `https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/wangerxiao.json` | |
-| 单仓 · 讴歌 | `https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/ouge.json` | |
-| 单仓 · 摸鱼 | `https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/moyu.json` | |
-| 单仓 · OK | `https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/ok.json` | |
-| 单仓 · 小米 | `https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/xiaomi.json` | |
-| 单仓 · 巧记 | `https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/qiaoji.json` | |
-| 单仓 · 4K小盒子 | `https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json` | |
-| 单仓 · 潇洒 | `https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/xiaosa.json` | |
+| **多仓订阅（推荐）** | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/多仓订阅.json` | App 内可在各源之间切换 |
+| **在线浏览站（Pages）** | `https://c-hao.github.io/tvbox-config/` | 网页里浏览 / 复制 / 下载 `output/` 下所有配置 |
+| **单仓聚合** | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/单仓聚合.json` | 所有源站点合并成一个，无需切换 |
+| 单仓 · 肥猫 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/feimao.json` | 单独使用某一个源 |
+| 单仓 · 饭太硬 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fantaiying.json` | |
+| 单仓 · 王二小 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/wangerxiao.json` | |
+| 单仓 · 讴歌 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/ouge.json` | |
+| 单仓 · 摸鱼 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/moyu.json` | |
+| 单仓 · OK | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/ok.json` | |
+| 单仓 · 小米 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/xiaomi.json` | |
+| 单仓 · 巧记 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/qiaoji.json` | |
+| 单仓 · 4K小盒子 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/4k.json` | |
+| 单仓 · 潇洒 | `https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/xiaosa.json` | |
 
 > 多仓订阅与单仓文件里的地址由脚本根据 `GITHUB_REPOSITORY` 环境变量自动生成。若国内直连 raw.githubusercontent.com 慢，可套一层 `ghproxy` / `gh-proxy` 等加速前缀。
+
+> Pages 在线浏览站需要在仓库 `Settings → Pages → Build and deployment → Source` 选择 **GitHub Actions**；推荐把默认分支设为 `develop`，与更新工作流保持一致。
 
 ## 四、自动更新机制
 
@@ -99,7 +104,7 @@ tvbox-ysc-config/
 
 ```bash
 pip install -r requirements.txt
-REPO=Lightconer/tvbox-ysc-config python scripts/update.py
+REPO=C-HAO/tvbox-config BRANCH=develop python scripts/update.py
 ```
 
 ## 七、脚本特性
@@ -108,6 +113,11 @@ REPO=Lightconer/tvbox-ysc-config python scripts/update.py
 - **多地址回退**：每个源按顺序尝试主/备用地址，单个地址失败不影响其他源。
 - **智能重试**：仅对超时、连接错误、空响应等瞬态问题退避重试；4xx/5xx 等确定性失败直接跳过。
 - **反爬兼容**：使用简洁 UA（部分接口对完整浏览器 UA 下发挑战页），自动剔除 JSON 内嵌的 `//` 注释，兼容未转义控制字符。
+- **健康检测，只生成有效源**：
+  - 源级（默认严格）：某源的全部地址抓取失败即视为无效，**不再沿用旧缓存**，直接不进输出；
+  - 站点级：对每个成功源的 `sites[]` 中 api 为 HTTP(S) 的接口做可达性探测，无响应的站点被剔除（`csp_`/`js:`/`py:` 等无法探测的 spider 原样保留）；
+  - 直播级：对 `lives[]` 的播放列表地址、以及内联 `channels[].urls`（含 `proxy://...ext=<url>`）做可达性探测，全部不可达的 lives 项被剔除。
+  - 可通过环境变量调整：`CHECK_SITES`、`CHECK_LIVES`（开关）、`PROBE_TIMEOUT`（默认 8 秒）、`PROBE_WORKERS`（默认 16）、`LIVE_CHANNEL_PROBES`（每个 lives 项最多探测的内联频道数，默认 0=不限制）、`ALLOW_STALE_SOURCES=1`（恢复"失败沿用缓存"）。每次检测结果写入 `status.json` 的 `sources[].checks`。
 - **聚合单仓**：把所有成功源的 `sites` 按 key 去重合并（重复 key 自动加源前缀），`lives/parses` 等列表合并去重。
 - **状态可视化**：每次更新自动刷新 README 状态表与 shields.io 徽章。
 - **部分成功可用**：只要有一个源成功就产出可用订阅，失败源记录在 `status.json` 与 README 状态表。
