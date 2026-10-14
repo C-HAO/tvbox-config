@@ -12,20 +12,39 @@
 ## 一、源可用性状态
 
 <!-- STATUS_START -->
-> 🔄 最近更新：2026-10-14 15:10:27（北京时间） · 成功 **4/10** 个源
+> 🔄 最近更新：2026-10-15 00:47:23（北京时间） · 成功 **14/29** 个源
 
 | 配置源 | 状态 | 使用地址 |
 | --- | --- | --- |
-| 肥猫 | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
+| 肥猫 | ❌ 失败 | 401 Client Error:  for url: https://6296.kstore.vip/facat... |
 | 饭太硬 | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
 | 王二小 | ✅ 成功 | `https://d.kstore.dev/download/9280/wex.json` |
-| 讴歌 | 📦 缓存 | 上次成功配置（本次更新未抓到，沿用缓存） |
+| 讴歌 | ❌ 失败 | HTTPSConnectionPool(host='xn--zp8-mf3g9f.v.nxog.top', por... |
 | 摸鱼 | ❌ 失败 | HTTPConnectionPool(host='xn--c5wa.xn--v4q818bf34b.top', p... |
 | OK | ❌ 失败 | HTTPConnectionPool(host='ok321.top', port=80): Max retrie... |
 | 小米 | ❌ 失败 | HTTPConnectionPool(host='miqk.cc', port=80): Max retries ... |
 | 巧记 | ❌ 失败 | HTTPConnectionPool(host='cdn.qiaoji8.com', port=80): Max ... |
 | 4K小盒子 | ✅ 成功 | `http://xhztv.top/4k.json` |
 | 潇洒 | ❌ 失败 | 404 Client Error:  for url: https://9877.kstore.space/Ano... |
+| linfern-av | ❌ 失败 | Expecting property name enclosed in double quotes: line 1... |
+| hebijunge-tvbox | ✅ 成功 | `https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json` |
+| hebijunge-recommended | ✅ 成功 | `https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox_recommended.json` |
+| hebijunge-short | ✅ 成功 | `https://raw.githubusercontent.com/hebijunge/tvbox-config/main/short.json` |
+| xiaohui98-tvbox | ❌ 失败 | Expecting property name enclosed in double quotes: line 2... |
+| AmoiXM-18TV | ❌ 失败 | Expecting value: line 1 column 1 (char 0) |
+| Adb111-tvbox | ✅ 成功 | `https://raw.githubusercontent.com/Adb111/tvbox-config/main/tvbox.json` |
+| hkuc-url | ❌ 失败 | 返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段） |
+| 91i55and0-R18 | ✅ 成功 | `https://raw.githubusercontent.com/91i55and0/tvbox-config-/main/R18.json` |
+| Sugayoiya-live | ✅ 成功 | `https://raw.githubusercontent.com/Sugayoiya/live-config/main/live.json` |
+| wan828963-tvboxxx | ✅ 成功 | `https://raw.githubusercontent.com/wan828963-code/tvbox-config/main/tvboxxx.json` |
+| wan828963-tvboxx | ✅ 成功 | `https://raw.githubusercontent.com/wan828963-code/tvbox-config/main/tvboxx.json` |
+| FanchangWang-my | ❌ 失败 | 返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段） |
+| dongge0504-影视成人 | ✅ 成功 | `https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/%E5%BD%B1%E8%A7%86%E6%88%90%E4%BA%BA.txt` |
+| dongge0504-影视接口 | ❌ 失败 | Expecting ',' delimiter: line 1073 column 6 (char 26602) |
+| dongge0504-新黄豆 | ✅ 成功 | `https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/%E6%96%B0%E9%BB%84%E8%B1%86.txt` |
+| dongge0504-黄果短剧 | ✅ 成功 | `https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/%E9%BB%84%E6%9E%9C%E7%9F%AD%E5%89%A7.txt` |
+| dongge0504-TVBox | ❌ 失败 | Expecting ',' delimiter: line 1073 column 6 (char 26602) |
+| dongge0504-fun-full | ✅ 成功 | `https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/fun-full.txt` |
 <!-- STATUS_END -->
 
 ## 二、仓库结构

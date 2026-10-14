@@ -1,20 +1,60 @@
 {
   "urls": [
     {
-      "name": "肥猫",
-      "url": "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/feimao.json"
-    },
-    {
       "name": "王二小",
-      "url": "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/wangerxiao.json"
-    },
-    {
-      "name": "讴歌",
-      "url": "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/ouge.json"
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/wangerxiao.json"
     },
     {
       "name": "4K小盒子",
-      "url": "https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json"
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/4k.json"
+    },
+    {
+      "name": "hebijunge-tvbox",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hebijunge-tvbox.json"
+    },
+    {
+      "name": "hebijunge-recommended",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hebijunge-recommended.json"
+    },
+    {
+      "name": "hebijunge-short",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hebijunge-short.json"
+    },
+    {
+      "name": "Adb111-tvbox",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/adb111-tvbox.json"
+    },
+    {
+      "name": "91i55and0-R18",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/91i55and0-r18.json"
+    },
+    {
+      "name": "Sugayoiya-live",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/sugayoiya-live.json"
+    },
+    {
+      "name": "wan828963-tvboxxx",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/wan828963-tvboxxx.json"
+    },
+    {
+      "name": "wan828963-tvboxx",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/wan828963-tvboxx.json"
+    },
+    {
+      "name": "dongge0504-影视成人",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/dongge0504-yscr.json"
+    },
+    {
+      "name": "dongge0504-新黄豆",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/dongge0504-xhd.json"
+    },
+    {
+      "name": "dongge0504-黄果短剧",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/dongge0504-hgdi.json"
+    },
+    {
+      "name": "dongge0504-fun-full",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/dongge0504-funfull.json"
     }
   ]
 }
