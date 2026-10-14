@@ -1,14 +1,13 @@
 {
-  "updated_at": "2026-10-14 15:10:27",
-  "repo": "Lightconer/tvbox-ysc-config",
+  "updated_at": "2026-10-15 00:47:23",
+  "repo": "C-HAO/tvbox-config",
   "sources": [
     {
       "id": "feimao",
       "name": "肥猫",
-      "ok": true,
-      "used_url": "(缓存)",
-      "error": "401 Client Error:  for url: https://6296.kstore.vip/facat.json",
-      "cached": true
+      "ok": false,
+      "used_url": null,
+      "error": "401 Client Error:  for url: https://6296.kstore.vip/facat.json"
     },
     {
       "id": "fantaiying",
@@ -22,15 +21,25 @@
       "name": "王二小",
       "ok": true,
       "used_url": "https://d.kstore.dev/download/9280/wex.json",
-      "error": null
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 0,
+          "dropped": 0
+        },
+        "lives": {
+          "checked": 2,
+          "dropped": 0,
+          "probes": 2
+        }
+      }
     },
     {
       "id": "ouge",
       "name": "讴歌",
-      "ok": true,
-      "used_url": "(缓存)",
-      "error": "HTTPSConnectionPool(host='xn--zp8-mf3g9f.v.nxog.top', port=443): Max retries exceeded with url: /m/111.php?ou=%E5%85%AC%E4%BC%97%E5%8F%B7%E6%AC%A7%E6%AD%8Capp&mz=index&jar=index&123&b=%E6%AC%A7%E6%AD%8Czp8 (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)')))",
-      "cached": true
+      "ok": false,
+      "used_url": null,
+      "error": "HTTPSConnectionPool(host='xn--zp8-mf3g9f.v.nxog.top', port=443): Max retries exceeded with url: /m/111.php?ou=%E5%85%AC%E4%BC%97%E5%8F%B7%E6%AC%A7%E6%AD%8Capp&mz=index&jar=index&123&b=%E6%AC%A7%E6%AD%8Czp8 (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1016)')))"
     },
     {
       "id": "moyu",
@@ -65,7 +74,18 @@
       "name": "4K小盒子",
       "ok": true,
       "used_url": "http://xhztv.top/4k.json",
-      "error": null
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 14,
+          "dropped": 6
+        },
+        "lives": {
+          "checked": 2,
+          "dropped": 2,
+          "probes": 2
+        }
+      }
     },
     {
       "id": "xiaosa",
@@ -73,6 +93,271 @@
       "ok": false,
       "used_url": null,
       "error": "404 Client Error:  for url: https://9877.kstore.space/AnotherD/api.json"
+    },
+    {
+      "id": "linfern-av",
+      "name": "linfern-av",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting property name enclosed in double quotes: line 185 column 73 (char 4636)"
+    },
+    {
+      "id": "hebijunge-tvbox",
+      "name": "hebijunge-tvbox",
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 1179,
+          "dropped": 399
+        },
+        "lives": {
+          "checked": 526,
+          "dropped": 294,
+          "probes": 526
+        }
+      }
+    },
+    {
+      "id": "hebijunge-recommended",
+      "name": "hebijunge-recommended",
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox_recommended.json",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 687,
+          "dropped": 60
+        },
+        "lives": {
+          "checked": 546,
+          "dropped": 313,
+          "probes": 546
+        }
+      }
+    },
+    {
+      "id": "hebijunge-short",
+      "name": "hebijunge-short",
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/short.json",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 44,
+          "dropped": 16
+        },
+        "lives": {
+          "checked": 0,
+          "dropped": 0,
+          "probes": 0
+        }
+      }
+    },
+    {
+      "id": "xiaohui98-tvbox",
+      "name": "xiaohui98-tvbox",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting property name enclosed in double quotes: line 2 column 1 (char 2)"
+    },
+    {
+      "id": "amoixm-18tv",
+      "name": "AmoiXM-18TV",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "id": "adb111-tvbox",
+      "name": "Adb111-tvbox",
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/Adb111/tvbox-config/main/tvbox.json",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 197,
+          "dropped": 0
+        },
+        "lives": {
+          "checked": 0,
+          "dropped": 0,
+          "probes": 0
+        }
+      }
+    },
+    {
+      "id": "hkuc-url",
+      "name": "hkuc-url",
+      "ok": false,
+      "used_url": null,
+      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
+    },
+    {
+      "id": "91i55and0-r18",
+      "name": "91i55and0-R18",
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/91i55and0/tvbox-config-/main/R18.json",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 101,
+          "dropped": 59
+        },
+        "lives": {
+          "checked": 1,
+          "dropped": 1,
+          "probes": 1
+        }
+      }
+    },
+    {
+      "id": "sugayoiya-live",
+      "name": "Sugayoiya-live",
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/Sugayoiya/live-config/main/live.json",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 0,
+          "dropped": 0
+        },
+        "lives": {
+          "checked": 1,
+          "dropped": 0,
+          "probes": 2313
+        }
+      }
+    },
+    {
+      "id": "wan828963-tvboxxx",
+      "name": "wan828963-tvboxxx",
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/wan828963-code/tvbox-config/main/tvboxxx.json",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 12,
+          "dropped": 4
+        },
+        "lives": {
+          "checked": 1,
+          "dropped": 0,
+          "probes": 1
+        }
+      }
+    },
+    {
+      "id": "wan828963-tvboxx",
+      "name": "wan828963-tvboxx",
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/wan828963-code/tvbox-config/main/tvboxx.json",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 20,
+          "dropped": 10
+        },
+        "lives": {
+          "checked": 2,
+          "dropped": 2,
+          "probes": 2
+        }
+      }
+    },
+    {
+      "id": "fanchangwang-my",
+      "name": "FanchangWang-my",
+      "ok": false,
+      "used_url": null,
+      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
+    },
+    {
+      "id": "dongge0504-yscr",
+      "name": "dongge0504-影视成人",
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/%E5%BD%B1%E8%A7%86%E6%88%90%E4%BA%BA.txt",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 110,
+          "dropped": 53
+        },
+        "lives": {
+          "checked": 1,
+          "dropped": 0,
+          "probes": 1
+        }
+      }
+    },
+    {
+      "id": "dongge0504-jiekou",
+      "name": "dongge0504-影视接口",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting ',' delimiter: line 1073 column 6 (char 26602)"
+    },
+    {
+      "id": "dongge0504-xhd",
+      "name": "dongge0504-新黄豆",
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/%E6%96%B0%E9%BB%84%E8%B1%86.txt",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 44,
+          "dropped": 11
+        },
+        "lives": {
+          "checked": 40,
+          "dropped": 12,
+          "probes": 40
+        }
+      }
+    },
+    {
+      "id": "dongge0504-hgdi",
+      "name": "dongge0504-黄果短剧",
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/%E9%BB%84%E6%9E%9C%E7%9F%AD%E5%89%A7.txt",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 1,
+          "dropped": 0
+        },
+        "lives": {
+          "checked": 0,
+          "dropped": 0,
+          "probes": 0
+        }
+      }
+    },
+    {
+      "id": "dongge0504-tvbox",
+      "name": "dongge0504-TVBox",
+      "ok": false,
+      "used_url": null,
+      "error": "Expecting ',' delimiter: line 1073 column 6 (char 26602)"
+    },
+    {
+      "id": "dongge0504-funfull",
+      "name": "dongge0504-fun-full",
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/fun-full.txt",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 64,
+          "dropped": 11
+        },
+        "lives": {
+          "checked": 40,
+          "dropped": 3,
+          "probes": 40
+        }
+      }
     }
   ]
 }
