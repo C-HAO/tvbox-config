@@ -1,5 +1,5 @@
 {
-  "description": "影视仓 / TVBox 配置源列表：聚合肥猫、饭太硬、王二小、讴歌（欧歌）、摸鱼、OK、小米、巧记、4K小盒子、潇洒等公开接口",
+  "description": "影视仓 / TVBox 配置源列表：聚合肥猫、饭太硬、王二小、讴歌（欧歌）、摸鱼、OK、小米、巧记、4K小盒子、潇洒等公开接口，并合并 linfern、hebijunge、xiaohui98、AmoiXM、Adb111、hkuc、91i55and0、Sugayoiya、wan828963、FanchangWang、dongge0504 等第三方 TVBox 单仓配置",
   "update_interval_hours": 12,
   "sources": [
     {
@@ -94,6 +94,139 @@
       "urls": [
         "https://9877.kstore.space/one.json",
         "https://9877.kstore.space/AnotherD/api.json"
+      ]
+    },
+    {
+      "id": "linfern-av",
+      "name": "linfern-av",
+      "urls": [
+        "https://raw.githubusercontent.com/linfern-mou/linfern/fa338c7d76ffccc0e6c51aac03d0d1a23d25acb5/tvbox/av.json"
+      ]
+    },
+    {
+      "id": "hebijunge-tvbox",
+      "name": "hebijunge-tvbox",
+      "urls": [
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox.json"
+      ]
+    },
+    {
+      "id": "hebijunge-recommended",
+      "name": "hebijunge-recommended",
+      "urls": [
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/tvbox_recommended.json"
+      ]
+    },
+    {
+      "id": "hebijunge-short",
+      "name": "hebijunge-short",
+      "urls": [
+        "https://raw.githubusercontent.com/hebijunge/tvbox-config/main/short.json"
+      ]
+    },
+    {
+      "id": "xiaohui98-tvbox",
+      "name": "xiaohui98-tvbox",
+      "urls": [
+        "https://raw.githubusercontent.com/xiaohui98/TvBox/main/tvbox.json"
+      ]
+    },
+    {
+      "id": "amoixm-18tv",
+      "name": "AmoiXM-18TV",
+      "urls": [
+        "https://raw.githubusercontent.com/AmoiXM/tvbox-config/main/18TV.txt"
+      ]
+    },
+    {
+      "id": "adb111-tvbox",
+      "name": "Adb111-tvbox",
+      "urls": [
+        "https://raw.githubusercontent.com/Adb111/tvbox-config/main/tvbox.json"
+      ]
+    },
+    {
+      "id": "hkuc-url",
+      "name": "hkuc-url",
+      "urls": [
+        "https://raw.githubusercontent.com/hkuc/tvbox-config/main/url.json"
+      ]
+    },
+    {
+      "id": "91i55and0-r18",
+      "name": "91i55and0-R18",
+      "urls": [
+        "https://raw.githubusercontent.com/91i55and0/tvbox-config-/main/R18.json"
+      ]
+    },
+    {
+      "id": "sugayoiya-live",
+      "name": "Sugayoiya-live",
+      "urls": [
+        "https://raw.githubusercontent.com/Sugayoiya/live-config/main/live.json"
+      ]
+    },
+    {
+      "id": "wan828963-tvboxxx",
+      "name": "wan828963-tvboxxx",
+      "urls": [
+        "https://raw.githubusercontent.com/wan828963-code/tvbox-config/main/tvboxxx.json"
+      ]
+    },
+    {
+      "id": "wan828963-tvboxx",
+      "name": "wan828963-tvboxx",
+      "urls": [
+        "https://raw.githubusercontent.com/wan828963-code/tvbox-config/main/tvboxx.json"
+      ]
+    },
+    {
+      "id": "fanchangwang-my",
+      "name": "FanchangWang-my",
+      "urls": [
+        "https://raw.githubusercontent.com/FanchangWang/tvbox_config/main/dist/my.json"
+      ]
+    },
+    {
+      "id": "dongge0504-yscr",
+      "name": "dongge0504-影视成人",
+      "urls": [
+        "https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/%E5%BD%B1%E8%A7%86%E6%88%90%E4%BA%BA.txt"
+      ]
+    },
+    {
+      "id": "dongge0504-jiekou",
+      "name": "dongge0504-影视接口",
+      "urls": [
+        "https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/%E5%BD%B1%E8%A7%86%E6%8E%A5%E5%8F%A3.txt"
+      ]
+    },
+    {
+      "id": "dongge0504-xhd",
+      "name": "dongge0504-新黄豆",
+      "urls": [
+        "https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/%E6%96%B0%E9%BB%84%E8%B1%86.txt"
+      ]
+    },
+    {
+      "id": "dongge0504-hgdi",
+      "name": "dongge0504-黄果短剧",
+      "urls": [
+        "https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/%E9%BB%84%E6%9E%9C%E7%9F%AD%E5%89%A7.txt"
+      ]
+    },
+    {
+      "id": "dongge0504-tvbox",
+      "name": "dongge0504-TVBox",
+      "urls": [
+        "https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/TVBox.txt"
+      ]
+    },
+    {
+      "id": "dongge0504-funfull",
+      "name": "dongge0504-fun-full",
+      "urls": [
+        "https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/fun-full.txt"
       ]
     }
   ]
