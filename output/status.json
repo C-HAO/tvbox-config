@@ -1,13 +1,23 @@
 {
-  "updated_at": "2026-10-15 15:28:07",
+  "updated_at": "2026-10-16 02:24:50",
   "repo": "C-HAO/tvbox-config",
   "sources": [
     {
       "id": "feimao",
       "name": "肥猫",
-      "ok": false,
-      "used_url": null,
-      "error": "401 Client Error:  for url: https://6296.kstore.vip/facat.json"
+      "ok": true,
+      "used_url": "http://肥猫.net/tv",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 0,
+          "dropped": 0
+        },
+        "lives": {
+          "checked": 1,
+          "dropped": 0
+        }
+      }
     },
     {
       "id": "fantaiying",
@@ -193,7 +203,7 @@
           "dropped": 16
         },
         "lives": {
-          "checked": 100,
+          "checked": 101,
           "dropped": 36
         }
       },
@@ -209,6 +219,7 @@
         "hkuc-url-13",
         "hkuc-url-14",
         "hkuc-url-17",
+        "hkuc-url-16-1",
         "hkuc-url-16-4",
         "hkuc-url-16-6",
         "hkuc-url-16-7"
@@ -291,14 +302,15 @@
       "checks": {
         "sites": {
           "checked": 277,
-          "dropped": 100
+          "dropped": 103
         },
         "lives": {
-          "checked": 71,
+          "checked": 72,
           "dropped": 23
         }
       },
       "children": [
+        "fanchangwang-my-1",
         "fanchangwang-my-4",
         "fanchangwang-my-6",
         "fanchangwang-my-7",

@@ -1,6 +1,10 @@
 {
   "urls": [
     {
+      "name": "肥猫",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/feimao.json"
+    },
+    {
       "name": "王二小",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/wangerxiao.json"
     },
@@ -69,6 +73,10 @@
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-17.json"
     },
     {
+      "name": "肥猫",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-16-1.json"
+    },
+    {
       "name": "香雅情",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-16-4.json"
     },
@@ -95,6 +103,10 @@
     {
       "name": "wan828963-tvboxx",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/wan828963-tvboxx.json"
+    },
+    {
+      "name": "肥猫",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-1.json"
     },
     {
       "name": "香雅情",
