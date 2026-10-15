@@ -6,13 +6,16 @@
 功能：
   1. 读取 config/sources.json 中的配置源列表
   2. 对每个源依次尝试"主线 + 备用"多个地址，自动做中文域名 punycode 转换
-  3. 校验返回内容是否为合法的 TVBox/影视仓 单仓配置（包含 sites/spiders/lives 等字段）
-  4. 健康检测（scripts/healthcheck.py）：探测 sites 的 HTTP 接口与 lives 的直播地址，
-     剔除无响应项；源的全部地址抓取失败时默认不再沿用旧缓存（严格模式）
-  5. 将每个源的最新配置保存到 output/<id>.json
-  5. 生成多仓订阅文件 output/多仓订阅.json（可直接填进影视仓的"订阅"或"多仓"）
-  6. 生成聚合单仓 output/单仓聚合.json（所有源 sites/lives/parses 合并去重）
-  7. 生成 shields 徽章 output/shield.json，并把各源状态写回 README
+  3. 识别配置类型：单仓直接使用；多仓订阅（如 hkuc）则递归展开成多个单仓
+  4. 宽容解析：支持整行 // / # / ## 注释、被截断的 JSON 自动补全、多段 JSON 取首段
+  5. 健康检测（scripts/healthcheck.py）：多策略探测 sites 的 HTTP 接口与 lives 的直播地址，
+     默认只剔除网络层确实连不上的项（服务端有响应即保留），避免误杀有效源；
+     源的全部地址抓取失败时默认不再沿用旧缓存（严格模式）
+  6. 将每个源（及多仓展开出的子源）的最新配置保存到 output/<id>.json
+  7. 生成多仓订阅文件 output/多仓订阅.json（可直接填进影视仓的"订阅"或"多仓"）
+  8. 生成聚合单仓 output/单仓聚合.json（所有源 sites/lives/parses 合并去重），
+     并清理本次未再产出的过期产物
+  9. 生成 shields 徽章 output/shield.json，并把各源状态写回 README
 兼容：本脚本同时兼容 GitHub Actions 自动运行 与 本地手动运行。
 在 GitHub Actions 中，环境变量 GITHUB_REPOSITORY 会被自动注入（格式 owner/repo），
 用于拼出多仓订阅里指向本仓库 raw 文件的完整 URL。
@@ -22,6 +25,7 @@
 import datetime
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -57,34 +61,89 @@ LIVE_CHANNEL_PROBES = healthcheck.env_int("LIVE_CHANNEL_PROBES", 0, minimum=0)
 ALLOW_STALE_SOURCES = healthcheck.env_flag("ALLOW_STALE_SOURCES", False)
 # README 状态区是否写各源明细（默认只写汇总，避免对外暴露源名称/地址）
 README_STATUS_DETAILS = healthcheck.env_flag("README_STATUS_DETAILS", False)
+# 检测严格度：默认 False（宽容）——只剔除网络层确实连不上的站点/直播，
+# 服务端有响应（含 4xx/5xx）的一律保留，避免误杀需要 POST/特殊参数的接口。
+STRICT_CHECKS = healthcheck.env_flag("STRICT_CHECKS", False)
+# 多仓订阅递归展开的最大深度（0 = 不展开多仓；默认 2 层，够覆盖"多仓套多仓"）
+MAX_MULTI_DEPTH = healthcheck.env_int("MAX_MULTI_DEPTH", 2, minimum=0)
+# 单个多仓订阅最多展开的子源数（防止被投毒的多仓指向海量外部地址被自动镜像）
+MAX_SUB_SOURCES = healthcheck.env_int("MAX_SUB_SOURCES", 64)
+# 多仓子源之间的抓取间隔，降低被源站限流的概率
+SUB_URL_INTERVAL = 0.8
 
 # 判定"像 TVBox 单仓配置"的顶层字段
 TVBOX_KEYS = ("sites", "spiders", "lives", "store", "exts", "parses", "flags")
 
 
+_COMMENT_LINE = re.compile(r"^\s*(?://|#)")
+
+
 def _strip_js_comments(text: str) -> str:
-    """剔除 JSON 中内嵌的 // 行注释（部分接口会在字段后追加免责注释）。"""
+    """剔除 JSON 中内嵌的**整行**注释。
+
+    兼容 `// 注释`、`# 注释`、`## 注释`（部分接口混用 Markdown 风格注释）。
+    只删除整行注释，不动行尾内容，避免误伤 `http://` 等含 `//` 的字符串。
+    """
     lines = text.split("\n")
-    cleaned = [ln for ln in lines if not ln.lstrip().startswith("//")]
+    cleaned = [ln for ln in lines if not _COMMENT_LINE.match(ln)]
     return "\n".join(cleaned)
 
 
+def _close_json(text: str) -> str:
+    """尝试补全被截断的 JSON：闭合未结束的字符串、补齐未配对的 {}/[]，
+    并去掉悬空的尾逗号。用于抢救内容在传输中被截断的接口。
+    """
+    stack = []
+    in_str = False
+    escaped = False
+    for ch in text:
+        if in_str:
+            if escaped:
+                escaped = False
+            elif ch == "\\":
+                escaped = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch in "{[":
+            stack.append("}" if ch == "{" else "]")
+        elif ch in "}]":
+            if stack and stack[-1] == ch:
+                stack.pop()
+    out = text
+    if in_str:
+        out += '"'
+    out = out.rstrip()
+    if out.endswith(","):
+        out = out[:-1]
+    return out + "".join(reversed(stack))
+
+
 def parse_json_lenient(text: str):
-    """宽容解析：去 BOM/空白、剔 // 注释后优先整体 json.loads；
-    若接口返回了拼接的多段 JSON，取第一段有效对象。"""
+    """宽容解析：去 BOM/空白、剔整行注释后优先整体 json.loads；
+    失败时尝试补全被截断的括号；再失败则取第一段有效对象（兼容多段 JSON 拼接）。"""
     text = text.lstrip("\ufeff").strip()
     text = _strip_js_comments(text)
-    try:
-        # strict=False 允许字符串中出现未转义的控制字符（部分接口的 JSON 不规范）
-        return json.loads(text, strict=False)
-    except json.JSONDecodeError:
-        # 兼容"返回了多个 JSON 拼接在一起"的接口
-        decoder = json.JSONDecoder(strict=False)
+    candidates = [text]
+    repaired = _close_json(text)
+    if repaired != text:
+        candidates.append(repaired)
+    for candidate in candidates:
         try:
-            obj, _ = decoder.raw_decode(text)
-            return obj
-        except Exception:
-            raise
+            # strict=False 允许字符串中出现未转义的控制字符（部分接口的 JSON 不规范）
+            return json.loads(candidate, strict=False)
+        except json.JSONDecodeError:
+            # 兼容"返回了多个 JSON 拼接在一起"的接口
+            decoder = json.JSONDecoder(strict=False)
+            try:
+                obj, _ = decoder.raw_decode(candidate)
+                return obj
+            except Exception:  # noqa: BLE001
+                continue
+    # 全部尝试失败：抛出原始文本的整体解析错误，保留可读报错
+    return json.loads(candidates[0], strict=False)
 
 
 def idn_encode(url: str) -> str:
@@ -105,11 +164,47 @@ def idn_encode(url: str) -> str:
     )
 
 
+def classify_config(data) -> str:
+    """判断配置类型：
+    - 'single' ：单仓配置（含 sites/spiders/lives 等字段）
+    - 'multi'  ：多仓订阅（顶层 urls 列表，或纯数组的 [{name,url}] / ["url"]）
+    - 'unknown'：无法识别
+    """
+    if isinstance(data, dict):
+        if any(key in data for key in TVBOX_KEYS):
+            return "single"
+        if isinstance(data.get("urls"), list):
+            return "multi"
+    if isinstance(data, list):
+        if any(
+            (isinstance(it, dict) and isinstance(it.get("url"), str))
+            or (isinstance(it, str) and it.strip())
+            for it in data
+        ):
+            return "multi"
+    return "unknown"
+
+
+def extract_sub_urls(data):
+    """从多仓配置中提取子源 [(name, url), ...]。
+
+    兼容 `{"urls":[{"name","url"}]}` 与 `[{"name","url"}]` 两种多仓格式。
+    """
+    items = data.get("urls") if isinstance(data, dict) else data
+    out = []
+    for it in items or []:
+        if isinstance(it, dict):
+            url = it.get("url")
+            if isinstance(url, str) and url.strip():
+                out.append((it.get("name") or "", url.strip()))
+        elif isinstance(it, str) and it.strip():
+            out.append(("", it.strip()))
+    return out
+
+
 def is_valid_tvbox_config(data) -> bool:
-    """粗略校验：返回内容是否像 TVBox/影视仓 单仓配置。"""
-    if not isinstance(data, dict):
-        return False
-    return any(key in data for key in TVBOX_KEYS)
+    """粗略校验：返回内容是否像 TVBox/影视仓 **单仓** 配置。"""
+    return classify_config(data) == "single"
 
 
 def _should_retry(err: Exception, resp_text_len: int = -1) -> bool:
@@ -146,8 +241,10 @@ def fetch_config(url: str) -> dict:
             )
             resp.raise_for_status()
             data = parse_json_lenient(resp.text)
-            if not is_valid_tvbox_config(data):
-                raise ValueError("返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）")
+            if classify_config(data) == "unknown":
+                raise ValueError(
+                    "返回内容不是 TVBox/影视仓 配置（既无 sites/spiders/lives 等字段，也不是多仓订阅）"
+                )
             return data
         except Exception as e:  # noqa: BLE001
             last_err = e
@@ -159,6 +256,49 @@ def fetch_config(url: str) -> dict:
             else:
                 break
     raise last_err
+
+
+def expand_source(entry_url, sid, name, max_depth=None):
+    """从一个入口地址抓取配置；若是**多仓订阅**则递归展开为多个单仓。
+
+    返回 [(sub_id, sub_name, data, used_url), ...]；入口地址抓取失败时抛出异常。
+    子源抓取失败只跳过该子源，不影响其他子源（避免个别失效子源拖垮整个多仓）。
+    """
+    if max_depth is None:
+        max_depth = MAX_MULTI_DEPTH
+    results = []
+    queue = [(sid, name, entry_url, 0)]
+    seen = set()
+    while queue:
+        cur_id, cur_name, url, depth = queue.pop(0)
+        key = idn_encode(url)
+        if key in seen:
+            continue
+        seen.add(key)
+        if depth > 0:
+            time.sleep(SUB_URL_INTERVAL)  # 子源之间留间隔，降低被限流概率
+        try:
+            data = fetch_config(url)
+        except Exception as exc:  # noqa: BLE001
+            if depth == 0:
+                raise  # 入口失败交由上层尝试备用地址
+            print(f"      (子源失败 {cur_name}: {exc})")
+            continue
+        kind = classify_config(data)
+        if kind == "single":
+            results.append((cur_id, cur_name, data, url))
+        elif kind == "multi" and depth < max_depth:
+            subs = extract_sub_urls(data)
+            for index, (sub_name, sub_url) in enumerate(subs):
+                if len(queue) + len(results) >= MAX_SUB_SOURCES:
+                    print(f"      (多仓 {cur_name} 展开达上限 {MAX_SUB_SOURCES}，停止展开)")
+                    break
+                child_id = f"{cur_id}-{index}"
+                child_name = sub_name or f"{cur_name}-{index}"
+                queue.append((child_id, child_name, sub_url, depth + 1))
+        else:
+            print(f"      (跳过无法识别的配置 {cur_name}: {kind})")
+    return results
 
 
 def _merge_list(fetched, field):
@@ -311,6 +451,7 @@ def main() -> int:
     status = {"updated_at": now_str, "repo": repo, "sources": []}
     subscriptions = []
     fetched = []  # [(sid, name, data_dict), ...] 用于聚合单仓
+    generated = set()  # 本次实际产出的文件名，用于清理过期残留
 
     ok_count = 0
     for src in cfg.get("sources", []):
@@ -323,35 +464,56 @@ def main() -> int:
 
         for url in urls:
             try:
-                data = fetch_config(url)
-                report = healthcheck.filter_config(
-                    data,
-                    url,
-                    check_sites=CHECK_SITES,
-                    check_lives=CHECK_LIVES,
-                    timeout=PROBE_TIMEOUT,
-                    workers=PROBE_WORKERS,
-                    max_live_probes=LIVE_CHANNEL_PROBES,
-                )
-                entry["checks"] = report
-                out_path = os.path.join(OUTPUT_DIR, f"{sid}.json")
-                with open(out_path, "w", encoding="utf-8") as f:
-                    json.dump(data, f, ensure_ascii=False, indent=2)
+                # 抓取入口地址；若为多仓订阅则递归展开为多个单仓
+                children = expand_source(url, sid, name)
+                if not children:
+                    raise ValueError("未解析出任何单仓配置")
+
+                site_checked = site_dropped = live_checked = live_dropped = 0
+                child_ids = []
+                for sub_id, sub_name, data, used_url in children:
+                    report = healthcheck.filter_config(
+                        data,
+                        used_url,
+                        check_sites=CHECK_SITES,
+                        check_lives=CHECK_LIVES,
+                        timeout=PROBE_TIMEOUT,
+                        workers=PROBE_WORKERS,
+                        max_live_probes=LIVE_CHANNEL_PROBES,
+                        strict=STRICT_CHECKS,
+                    )
+                    out_path = os.path.join(OUTPUT_DIR, f"{sub_id}.json")
+                    with open(out_path, "w", encoding="utf-8") as f:
+                        json.dump(data, f, ensure_ascii=False, indent=2)
+                    generated.add(f"{sub_id}.json")
+                    subscriptions.append(
+                        {"name": sub_name, "url": f"{raw_base}/{sub_id}.json"}
+                    )
+                    fetched.append((sub_id, sub_name, data))
+                    child_ids.append(sub_id)
+                    sites_info = report.get("sites", {})
+                    lives_info = report.get("lives", {})
+                    site_checked += sites_info.get("checked", 0)
+                    site_dropped += sites_info.get("dropped", 0)
+                    live_checked += lives_info.get("checked", 0)
+                    live_dropped += lives_info.get("dropped", 0)
+
+                entry["checks"] = {
+                    "sites": {"checked": site_checked, "dropped": site_dropped},
+                    "lives": {"checked": live_checked, "dropped": live_dropped},
+                }
+                if len(child_ids) > 1:
+                    entry["children"] = child_ids  # 多仓展开出的子源
                 entry["ok"] = True
                 entry["used_url"] = url
                 entry["error"] = None
-                subscriptions.append(
-                    {"name": name, "url": f"{raw_base}/{sid}.json"}
-                )
-                fetched.append((sid, name, data))
                 ok_count += 1
                 saved = True
-                sites_info = report.get("sites", {})
-                lives_info = report.get("lives", {})
+                extra = f"（展开 {len(child_ids)} 个子源）" if len(child_ids) > 1 else ""
                 print(
-                    f"[OK]   {name} <- {url}  "
-                    f"(sites -{sites_info.get('dropped', 0)}/{sites_info.get('checked', 0)}"
-                    f", lives -{lives_info.get('dropped', 0)}/{lives_info.get('checked', 0)})"
+                    f"[OK]   {name} <- {url} {extra} "
+                    f"(sites -{site_dropped}/{site_checked}"
+                    f", lives -{live_dropped}/{live_checked})"
                 )
                 break
             except Exception as e:  # noqa: BLE001
@@ -373,6 +535,7 @@ def main() -> int:
                             {"name": name, "url": f"{raw_base}/{sid}.json"}
                         )
                         fetched.append((sid, name, cached))
+                        generated.add(f"{sid}.json")
                         entry["ok"] = True
                         entry["cached"] = True
                         entry["used_url"] = "(缓存)"
@@ -411,6 +574,17 @@ def main() -> int:
     total = len(cfg.get("sources", []))
     write_badge(ok_count, total)
     update_readme(status, ok_count, total)
+
+    # 清理本次未再产出的旧产物（失效源 / 数量变化后多余的多仓子源），
+    # 避免这些过期文件仍被 GitHub Pages 直链访问或误订阅。
+    keep = {"status.json", "shield.json", "多仓订阅.json", "单仓聚合.json"}
+    for fname in os.listdir(OUTPUT_DIR):
+        if fname.endswith(".json") and fname not in generated and fname not in keep:
+            try:
+                os.remove(os.path.join(OUTPUT_DIR, fname))
+                print(f"[CLEAN] 移除过期产物 {fname}")
+            except OSError:
+                pass
 
     print("\n" + "=" * 50)
     print(f"本次更新：{ok_count}/{total} 个源成功")

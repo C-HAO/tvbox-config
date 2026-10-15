@@ -91,11 +91,14 @@ REPO=OWNER/REPO BRANCH=BRANCH python scripts/update.py
 - **多地址回退**：每个源按顺序尝试主/备用地址，单个地址失败不影响其他源。
 - **智能重试**：仅对超时、连接错误、空响应等瞬态问题退避重试；4xx/5xx 等确定性失败直接跳过。
 - **反爬兼容**：使用简洁 UA（部分接口对完整浏览器 UA 下发挑战页），自动剔除 JSON 内嵌的 `//` 注释，兼容未转义控制字符。
-- **健康检测，只生成有效源**：
-  - 源级（默认严格）：某源的全部地址抓取失败即视为无效，**不再沿用旧缓存**，直接不进输出；
-  - 站点级：对每个成功源的 `sites[]` 中 api 为 HTTP(S) 的接口做可达性探测，无响应的站点被剔除（`csp_`/`js:`/`py:` 等无法探测的 spider 原样保留）；
-  - 直播级：对 `lives[]` 的播放列表地址、以及内联 `channels[].urls`（含 `proxy://...ext=<url>`）做可达性探测，全部不可达的 lives 项被剔除。
-  - 可通过环境变量调整：`CHECK_SITES`、`CHECK_LIVES`（开关）、`PROBE_TIMEOUT`（默认 8 秒）、`PROBE_WORKERS`（默认 16）、`LIVE_CHANNEL_PROBES`（每个 lives 项最多探测的内联频道数，默认 0=不限制）、`ALLOW_STALE_SOURCES=1`（恢复"失败沿用缓存"）。每次检测结果写入 `status.json` 的 `sources[].checks`。
+- **多仓订阅自动展开**：若某源返回的是多仓订阅（`{"urls":[{name,url}]}` 或 `[{"name","url"}]`，如 `hkuc`），会**递归下钻**抓取其内每个单仓（`MAX_MULTI_DEPTH` 默认 2 层，含"多仓套多仓"），个别子源失效只跳过该子源，不会拖垮整个多仓。
+- **健康检测（默认宽容，尽量不误杀）**：
+  - 源级：某源的全部地址抓取失败即视为无效，**不再沿用旧缓存**，直接不进输出；
+  - 站点级：对 `sites[]` 中 api 为 HTTP(S) 的接口做**多策略**探测（`GET`、`GET+ac=list`、`POST ac=list`、`POST ac=videolist`），任一策略 2xx/3xx 即保留；**只有判定为确定性不可达（DNS 解析失败 / 连接被拒）才剔除**，服务端返回 4xx/5xx、或 SSL/超时等不确定情况一律保留，避免误杀需要 POST/特殊参数或带反爬的接口（`csp_`/`js:`/`py:` 等 spider 原样保留）；
+  - 直播级：对 `lives[]` 播放地址、内联 `channels[].urls`（含 `proxy://...ext=<url>`）做可达性探测并去重，只要任一地址有响应、或处于不确定状态即保留；
+  - 过期产物清理：每次运行后删除 `output/` 中本次未再产出的 `<id>.json`，避免失效源/多余多仓子源被直链访问到；
+  - 解析容错：支持整行 `//` / `#` / `##` 注释、被截断的 JSON 自动补全括号、多段 JSON 取首段。
+  - 可通过环境变量调整：`CHECK_SITES`、`CHECK_LIVES`（开关）、`PROBE_TIMEOUT`（默认 8 秒）、`PROBE_WORKERS`（默认 16）、`LIVE_CHANNEL_PROBES`（每个 lives 项最多探测的内联频道数，默认 0=不限制）、`MAX_MULTI_DEPTH`（多仓展开深度，默认 2）、`MAX_SUB_SOURCES`（单个多仓最多展开子源数，默认 64）、`STRICT_CHECKS=1`（改回严格：只保留明确可用的站点/直播）、`ALLOW_STALE_SOURCES=1`（恢复"失败沿用缓存"）。每次检测结果写入 `status.json` 的 `sources[].checks`。
 - **聚合单仓**：把所有成功源的 `sites` 按 key 去重合并（重复 key 自动加源前缀），`lives/parses` 等列表合并去重。
 - **状态可视化**：每次更新自动刷新 shields.io 徽章；README 状态区默认只写汇总（`成功 N/M 个源`），不暴露各源名称与地址；需要显示明细时设环境变量 `README_STATUS_DETAILS=1`（完整状态始终保存在 `status.json`）。
 - **部分成功可用**：只要有一个源成功就产出可用订阅，失败源记录在 `status.json` 与 README 状态表。
