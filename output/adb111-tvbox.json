@@ -142,6 +142,16 @@
       "filterable": 1
     },
     {
+      "key": "kjh998_AnyShort短剧",
+      "name": "AnyShort短剧",
+      "type": 3,
+      "api": "https://gh-proxy.org/https://raw.githubusercontent.com/phu889/kjh998/main/py/AnyShort%E7%9F%AD%E5%89%A7.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
       "key": "kjh998_Auete影视",
       "name": "Auete影视",
       "type": 3,
@@ -906,6 +916,16 @@
       "name": "山水影视",
       "type": 3,
       "api": "https://gh-proxy.org/https://raw.githubusercontent.com/phu889/kjh998/main/py/%E5%B1%B1%E6%B0%B4%E5%BD%B1%E8%A7%86.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "kjh998_广东荔枝电视台",
+      "name": "广东荔枝电视台",
+      "type": 3,
+      "api": "https://gh-proxy.org/https://raw.githubusercontent.com/phu889/kjh998/main/py/%E5%B9%BF%E4%B8%9C%E8%8D%94%E6%9E%9D%E7%94%B5%E8%A7%86%E5%8F%B0.py",
       "searchable": 1,
       "changeable": 1,
       "quickSearch": 1,

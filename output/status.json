@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-15 00:47:23",
+  "updated_at": "2026-10-15 11:00:21",
   "repo": "C-HAO/tvbox-config",
   "sources": [
     {
@@ -29,8 +29,7 @@
         },
         "lives": {
           "checked": 2,
-          "dropped": 0,
-          "probes": 2
+          "dropped": 0
         }
       }
     },
@@ -78,12 +77,11 @@
       "checks": {
         "sites": {
           "checked": 14,
-          "dropped": 6
+          "dropped": 4
         },
         "lives": {
           "checked": 2,
-          "dropped": 2,
-          "probes": 2
+          "dropped": 0
         }
       }
     },
@@ -109,13 +107,12 @@
       "error": null,
       "checks": {
         "sites": {
-          "checked": 1179,
-          "dropped": 399
+          "checked": 1431,
+          "dropped": 107
         },
         "lives": {
-          "checked": 526,
-          "dropped": 294,
-          "probes": 526
+          "checked": 539,
+          "dropped": 119
         }
       }
     },
@@ -127,13 +124,12 @@
       "error": null,
       "checks": {
         "sites": {
-          "checked": 687,
-          "dropped": 60
+          "checked": 686,
+          "dropped": 4
         },
         "lives": {
-          "checked": 546,
-          "dropped": 313,
-          "probes": 546
+          "checked": 558,
+          "dropped": 119
         }
       }
     },
@@ -145,13 +141,12 @@
       "error": null,
       "checks": {
         "sites": {
-          "checked": 44,
-          "dropped": 16
+          "checked": 64,
+          "dropped": 3
         },
         "lives": {
           "checked": 0,
-          "dropped": 0,
-          "probes": 0
+          "dropped": 0
         }
       }
     },
@@ -160,7 +155,7 @@
       "name": "xiaohui98-tvbox",
       "ok": false,
       "used_url": null,
-      "error": "Expecting property name enclosed in double quotes: line 2 column 1 (char 2)"
+      "error": "Expecting property name enclosed in double quotes: line 4 column 1 (char 153)"
     },
     {
       "id": "amoixm-18tv",
@@ -177,22 +172,48 @@
       "error": null,
       "checks": {
         "sites": {
-          "checked": 197,
+          "checked": 199,
           "dropped": 0
         },
         "lives": {
           "checked": 0,
-          "dropped": 0,
-          "probes": 0
+          "dropped": 0
         }
       }
     },
     {
       "id": "hkuc-url",
       "name": "hkuc-url",
-      "ok": false,
-      "used_url": null,
-      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/hkuc/tvbox-config/main/url.json",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 147,
+          "dropped": 16
+        },
+        "lives": {
+          "checked": 101,
+          "dropped": 36
+        }
+      },
+      "children": [
+        "hkuc-url-4",
+        "hkuc-url-5",
+        "hkuc-url-6",
+        "hkuc-url-7",
+        "hkuc-url-8",
+        "hkuc-url-9",
+        "hkuc-url-11",
+        "hkuc-url-12",
+        "hkuc-url-13",
+        "hkuc-url-14",
+        "hkuc-url-17",
+        "hkuc-url-16-1",
+        "hkuc-url-16-4",
+        "hkuc-url-16-6",
+        "hkuc-url-16-7"
+      ]
     },
     {
       "id": "91i55and0-r18",
@@ -203,12 +224,11 @@
       "checks": {
         "sites": {
           "checked": 101,
-          "dropped": 59
+          "dropped": 39
         },
         "lives": {
           "checked": 1,
-          "dropped": 1,
-          "probes": 1
+          "dropped": 0
         }
       }
     },
@@ -225,8 +245,7 @@
         },
         "lives": {
           "checked": 1,
-          "dropped": 0,
-          "probes": 2313
+          "dropped": 0
         }
       }
     },
@@ -243,8 +262,7 @@
         },
         "lives": {
           "checked": 1,
-          "dropped": 0,
-          "probes": 1
+          "dropped": 0
         }
       }
     },
@@ -257,21 +275,39 @@
       "checks": {
         "sites": {
           "checked": 20,
-          "dropped": 10
+          "dropped": 0
         },
         "lives": {
           "checked": 2,
-          "dropped": 2,
-          "probes": 2
+          "dropped": 1
         }
       }
     },
     {
       "id": "fanchangwang-my",
       "name": "FanchangWang-my",
-      "ok": false,
-      "used_url": null,
-      "error": "返回内容不是 TVBox 配置（缺少 sites/spiders/lives 等字段）"
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/FanchangWang/tvbox_config/main/dist/my.json",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 277,
+          "dropped": 101
+        },
+        "lives": {
+          "checked": 72,
+          "dropped": 23
+        }
+      },
+      "children": [
+        "fanchangwang-my-1",
+        "fanchangwang-my-4",
+        "fanchangwang-my-6",
+        "fanchangwang-my-7",
+        "fanchangwang-my-8",
+        "fanchangwang-my-9",
+        "fanchangwang-my-10"
+      ]
     },
     {
       "id": "dongge0504-yscr",
@@ -282,21 +318,30 @@
       "checks": {
         "sites": {
           "checked": 110,
-          "dropped": 53
+          "dropped": 16
         },
         "lives": {
           "checked": 1,
-          "dropped": 0,
-          "probes": 1
+          "dropped": 0
         }
       }
     },
     {
       "id": "dongge0504-jiekou",
       "name": "dongge0504-影视接口",
-      "ok": false,
-      "used_url": null,
-      "error": "Expecting ',' delimiter: line 1073 column 6 (char 26602)"
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/%E5%BD%B1%E8%A7%86%E6%8E%A5%E5%8F%A3.txt",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 0,
+          "dropped": 0
+        },
+        "lives": {
+          "checked": 0,
+          "dropped": 0
+        }
+      }
     },
     {
       "id": "dongge0504-xhd",
@@ -307,12 +352,11 @@
       "checks": {
         "sites": {
           "checked": 44,
-          "dropped": 11
+          "dropped": 7
         },
         "lives": {
           "checked": 40,
-          "dropped": 12,
-          "probes": 40
+          "dropped": 1
         }
       }
     },
@@ -329,17 +373,26 @@
         },
         "lives": {
           "checked": 0,
-          "dropped": 0,
-          "probes": 0
+          "dropped": 0
         }
       }
     },
     {
       "id": "dongge0504-tvbox",
       "name": "dongge0504-TVBox",
-      "ok": false,
-      "used_url": null,
-      "error": "Expecting ',' delimiter: line 1073 column 6 (char 26602)"
+      "ok": true,
+      "used_url": "https://raw.githubusercontent.com/dongge0504-bot/-tvbox-config/main/TVBox.txt",
+      "error": null,
+      "checks": {
+        "sites": {
+          "checked": 0,
+          "dropped": 0
+        },
+        "lives": {
+          "checked": 0,
+          "dropped": 0
+        }
+      }
     },
     {
       "id": "dongge0504-funfull",
@@ -350,12 +403,11 @@
       "checks": {
         "sites": {
           "checked": 64,
-          "dropped": 11
+          "dropped": 7
         },
         "lives": {
           "checked": 40,
-          "dropped": 3,
-          "probes": 40
+          "dropped": 1
         }
       }
     }

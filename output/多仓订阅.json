@@ -25,6 +25,66 @@
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/adb111-tvbox.json"
     },
     {
+      "name": "0821",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-4.json"
+    },
+    {
+      "name": "0825",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-5.json"
+    },
+    {
+      "name": "0826",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-6.json"
+    },
+    {
+      "name": "0827",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-7.json"
+    },
+    {
+      "name": "js",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-8.json"
+    },
+    {
+      "name": "XYQ",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-9.json"
+    },
+    {
+      "name": "yw88075_js",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-11.json"
+    },
+    {
+      "name": "Dong-learn9_tvbox2",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-12.json"
+    },
+    {
+      "name": "liu673cn_m",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-13.json"
+    },
+    {
+      "name": "anaer_meow",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-14.json"
+    },
+    {
+      "name": "hkuc_ai",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-17.json"
+    },
+    {
+      "name": "肥猫",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-16-1.json"
+    },
+    {
+      "name": "香雅情",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-16-4.json"
+    },
+    {
+      "name": "PG本地包",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-16-6.json"
+    },
+    {
+      "name": "真心本地包",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-16-7.json"
+    },
+    {
       "name": "91i55and0-R18",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/91i55and0-r18.json"
     },
@@ -41,8 +101,40 @@
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/wan828963-tvboxx.json"
     },
     {
+      "name": "肥猫",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-1.json"
+    },
+    {
+      "name": "香雅情",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-4.json"
+    },
+    {
+      "name": "PG本地包",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-6.json"
+    },
+    {
+      "name": "真心本地包",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-7.json"
+    },
+    {
+      "name": "神州天上人间",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-8.json"
+    },
+    {
+      "name": "18live",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-9.json"
+    },
+    {
+      "name": "19",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-10.json"
+    },
+    {
       "name": "dongge0504-影视成人",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/dongge0504-yscr.json"
+    },
+    {
+      "name": "dongge0504-影视接口",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/dongge0504-jiekou.json"
     },
     {
       "name": "dongge0504-新黄豆",
@@ -51,6 +143,10 @@
     {
       "name": "dongge0504-黄果短剧",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/dongge0504-hgdi.json"
+    },
+    {
+      "name": "dongge0504-TVBox",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/dongge0504-tvbox.json"
     },
     {
       "name": "dongge0504-fun-full",

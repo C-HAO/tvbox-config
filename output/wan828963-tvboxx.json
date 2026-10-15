@@ -2,8 +2,32 @@
   "spider": "https://pan.szfx.top/down.php/8487389cb6ed8d427e523510ab38d23b.jar",
   "wallpaper": "https://pan.szfx.top/down.php/91de26150dee0f2e52b30413171e4701.png",
   "logo": "https://789.st/GlhcG1r",
-  "lives": [],
+  "lives": [
+    {
+      "name": "🔞大秀TV[直播]",
+      "type": 0,
+      "url": "https://proxy.api.030101.xyz/https://omds.zzong6599.workers.dev/live.m3u"
+    }
+  ],
   "sites": [
+    {
+      "key": "直播",
+      "name": "🔞直播",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/a/apiv2134色播.js",
+      "searchable": 1,
+      "changeable": 0
+    },
+    {
+      "key": "推特",
+      "name": "🔞推特",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/js/推特APP.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1
+    },
     {
       "key": "SEX",
       "name": "🔞SEX",
@@ -37,6 +61,17 @@
         "分类": "日韩$1#偷拍$21#无码$22#自拍$23#巨乳$24#华人$25#嫩模$26#剧情$27#动漫$28#熟女$29#丝袜$30#欧美$32#有码$33#制服$34#口交$35#三级$31#",
         "分类url": "https://hekody.flsp8.boats/vodtype/{cateId}-{catePg}.html"
       }
+    },
+    {
+      "key": "七区",
+      "name": "🔞七区",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/js/七区.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "playerType": 2
     },
     {
       "key": "悠亚",
@@ -126,6 +161,13 @@
         "播放链接": "href=\"&&\"",
         "分类": "奥斯卡资源$119#野鸡资源$267#冷库资源$206#玉兔资源$302#155资源$244#国产精品$269#国产乱伦$322#日本无码$124#日本有码$123"
       }
+    },
+    {
+      "key": "Missav",
+      "name": "🔞Missav",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/js/drpy2.min.js",
+      "ext": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/js/Missav.js"
     },
     {
       "key": "逍遥",
@@ -227,6 +269,17 @@
       "ext": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/a/超级精品.json"
     },
     {
+      "key": "红薯",
+      "name": "🔞红薯",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/a/小红薯APP.py",
+      "order_num": 5,
+      "ext": ""
+    },
+    {
       "key": "少女",
       "name": "🔞少女",
       "type": 3,
@@ -297,6 +350,17 @@
       "ext": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/a/经典三部曲.json"
     },
     {
+      "key": "kemo",
+      "name": "🔞kemo",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/a/kemon.py",
+      "order_num": 5,
+      "ext": ""
+    },
+    {
       "key": "盲盒",
       "name": "🔞盲盒",
       "type": 3,
@@ -319,6 +383,28 @@
       "ext": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/a/凡人修色传.json"
     },
     {
+      "key": "E佬",
+      "name": "🔞E佬",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/a/E佬通用视频.py",
+      "order_num": 5,
+      "ext": ""
+    },
+    {
+      "key": "full",
+      "name": "🔞full",
+      "type": 3,
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "api": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/a/fullhd.py",
+      "order_num": 5,
+      "ext": ""
+    },
+    {
       "key": "风欲",
       "name": "🔞风欲",
       "type": 3,
@@ -330,6 +416,12 @@
         "分类": "乱伦$1#岀轨$2#制服$4#自慰$3#偷拍$5#自拍$20#国产$21#同性$22#日韩$23#欧美$24#三极$25#动漫$26#",
         "分类url": "https://cbx.fysn7.lat/cn/home/web/index.php/vod/type/id/{cateId}/page/{catePg}.html"
       }
+    },
+    {
+      "key": "不良",
+      "name": "🔞不良",
+      "type": 3,
+      "api": "https://raw.githubusercontent.com/cxelva/xpg/refs/heads/main/js/不良.js"
     },
     {
       "key": "记者",
@@ -358,6 +450,15 @@
       "name": "🔞越南",
       "type": 1,
       "api": "https://vnzyz.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "91av",
+      "name": "🔞九一",
+      "type": 1,
+      "api": "https://91av.cyou/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1

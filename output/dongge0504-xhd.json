@@ -549,10 +549,24 @@
       "changeable": 1
     },
     {
+      "key": "AIvin",
+      "name": "AIvin | 采集",
+      "type": 0,
+      "api": "http://lbapiby.com/api.php/provide/vod/at/xml",
+      "ext": "proxy"
+    },
+    {
       "key": "色猫",
       "name": "色猫 | 采集",
       "type": 1,
       "api": "https://caiji.semaozy.net/inc/apijson_vod.php",
+      "ext": "proxy"
+    },
+    {
+      "key": "色猫",
+      "name": "色猫2 | 采集",
+      "type": 1,
+      "api": "https://api.maozyapi.com/inc/apijson_vod.php",
       "ext": "proxy"
     },
     {
@@ -863,6 +877,17 @@
       "ext": "proxy"
     },
     {
+      "key": "辣椒",
+      "name": "辣椒 | 采集",
+      "type": 1,
+      "api": "https://apilj.com/api.php/provide/vod/",
+      "playUrl": "",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "proxy"
+    },
+    {
       "key": "黄AV资源站",
       "name": "AV | 采集",
       "type": 0,
@@ -922,6 +947,15 @@
       "ext": "proxy"
     },
     {
+      "key": "探探",
+      "name": "探探 | 采集",
+      "type": 1,
+      "api": "https://apittzy.com/api.php/provide/vod/",
+      "searchable": 0,
+      "quickSearch": 0,
+      "ext": "proxy"
+    },
+    {
       "key": "玉兔",
       "name": "玉兔 | 采集",
       "type": 1,
@@ -978,6 +1012,60 @@
     }
   ],
   "lives": [
+    {
+      "name": "大洋马直播",
+      "type": 0,
+      "url": "./lib/deyzb.m3u",
+      "ua": ""
+    },
+    {
+      "name": "大秀直播",
+      "type": 0,
+      "url": "./lib/dxzb.m3u",
+      "ua": ""
+    },
+    {
+      "name": "欧美直播",
+      "type": 0,
+      "url": "./lib/omzb.m3u",
+      "ua": ""
+    },
+    {
+      "name": "国产系列",
+      "type": 0,
+      "url": "./lib/hsck_gc.m3u",
+      "ua": ""
+    },
+    {
+      "name": "日韩系列",
+      "type": 0,
+      "url": "./lib/hsck_rh.m3u",
+      "ua": ""
+    },
+    {
+      "name": "色播聚合",
+      "type": 0,
+      "url": "./lib/sbjh.m3u",
+      "ua": ""
+    },
+    {
+      "name": "麻豆视频",
+      "type": 0,
+      "url": "./lib/mdsp.m3u",
+      "ua": ""
+    },
+    {
+      "name": "台湾成人",
+      "type": 0,
+      "url": "./lib/rwcr.m3u",
+      "ua": ""
+    },
+    {
+      "name": "test",
+      "type": 0,
+      "url": "./lib/party.m3u",
+      "ua": ""
+    },
     {
       "name": "LIVEfl",
       "type": 0,
@@ -1107,6 +1195,14 @@
       "logo": "http://127.0.0.1:10079/p/0/proxy/https://epg.112114.xyz/logo/{name}.png"
     },
     {
+      "name": "Jable嗅探",
+      "type": 0,
+      "url": "https://raw.githubusercontent.com/fish2018/lib/main/txt/Jable嗅探.txt",
+      "ua": "okhttp/3.15",
+      "epg": "http://127.0.0.1:10079/p/0/proxy/http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "http://127.0.0.1:10079/p/0/proxy/https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
       "name": "vip源",
       "type": 0,
       "url": "https://raw.githubusercontent.com/fish2018/lib/main/txt/vip源.txt",
@@ -1199,6 +1295,17 @@
       "url": "https://github.com/zwrt/IPTV/blob/Files/Adult.m3u",
       "type": 0,
       "ua": "okhttp/3.15"
+    },
+    {
+      "group": "redirect",
+      "channels": [
+        {
+          "name": "redirect",
+          "urls": [
+            "proxy://do=live&type=live&proxy=&url="
+          ]
+        }
+      ]
     }
   ],
   "doh": [
