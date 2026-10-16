@@ -20785,6 +20785,15 @@
       "epg": "http://epg.112114.eu.org/?ch={name}&date={date}"
     },
     {
+      "name": "猫TV线路",
+      "type": 0,
+      "url": "http://rihou.cc:567/gggg.nzk",
+      "playerType": 2,
+      "ua": "okhttp/3",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png"
+    },
+    {
       "name": "Yoursmile",
       "type": 0,
       "url": "https://ghfast.top/raw.githubusercontent.com/yoursmile66/TVBox/refs/heads/main/live.txt",
@@ -21787,6 +21796,15 @@
       "logo": "https://epg.112114.xyz/logo/{name}.png"
     },
     {
+      "name": "日后",
+      "type": 0,
+      "url": "http://rihou.cc:555/gggg.nzk",
+      "playerType": 2,
+      "ua": "okhttp/3",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png"
+    },
+    {
       "name": "EPG直播",
       "type": "0",
       "pass": true,
@@ -21855,6 +21873,15 @@
       "timeout": 10
     },
     {
+      "name": "线路①",
+      "type": 0,
+      "url": "http://rihou.cc:567/gggg.nzk",
+      "playerType": 2,
+      "ua": "okhttp/3",
+      "epg": "https://epg.112114.eu.org/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png"
+    },
+    {
       "name": "线路②",
       "type": 0,
       "url": "https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
@@ -21883,6 +21910,13 @@
       "name": "ZBDS",
       "type": 0,
       "url": "https://live.zbds.top/tv/iptv4.txt",
+      "timeout": 10,
+      "playerType": 2
+    },
+    {
+      "name": "D佬直播",
+      "type": 0,
+      "url": "http://rihou.cc:555/gggg.nzk",
       "timeout": 10,
       "playerType": 2
     },
@@ -21942,6 +21976,15 @@
       "ua": "okhttp/3.15",
       "epg": "http://127.0.0.1:10079/p/0/proxy/http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "http://127.0.0.1:10079/p/0/proxy/https://epg.112114.xyz/logo/{name}.png"
+    },
+    {
+      "name": "💕分享者直播6",
+      "type": 0,
+      "url": "http://rihou.cc:555/gggg.nzk",
+      "playerType": 1,
+      "ua": "okhttp/3.15",
+      "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
+      "logo": "https://epg.112114.eu.org/logo/{name}.png"
     },
     {
       "name": "💕分享者直播7",
@@ -22158,6 +22201,12 @@
       "url": "https://live.fanmingming.cn/tv/m3u/ipv6.m3u",
       "playerType": 2,
       "timeout": 10
+    },
+    {
+      "name": "港澳台",
+      "type": 0,
+      "url": "http://rihou.cc:567/gggg.nzk",
+      "playerType": 1
     },
     {
       "name": "🐬各大源合集 海豚影视永久免费如有收费的都是骗子",
