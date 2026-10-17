@@ -14358,6 +14358,19 @@
       "group": "其他"
     },
     {
+      "key": "catvod_月光影视",
+      "name": "💥月光影视💥",
+      "type": 3,
+      "api": "http://192.129.140.23:5757/cat/月光影视.js?pwd=dzyyds",
+      "searchable": 1,
+      "filterable": 1,
+      "quickSearch": 1,
+      "title": "月光影视",
+      "lang": "cat",
+      "ext": "",
+      "group": "其他"
+    },
+    {
       "key": "毒舌影视.js",
       "name": "💥毒舌影视💥",
       "type": 3,

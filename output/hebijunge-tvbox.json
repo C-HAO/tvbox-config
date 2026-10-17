@@ -37065,6 +37065,19 @@
       "group": "其他"
     },
     {
+      "key": "catvod_月光影视",
+      "name": "💥月光影视💥",
+      "type": 3,
+      "api": "http://192.129.140.23:5757/cat/月光影视.js?pwd=dzyyds",
+      "searchable": 1,
+      "filterable": 1,
+      "quickSearch": 1,
+      "title": "月光影视",
+      "lang": "cat",
+      "ext": "",
+      "group": "其他"
+    },
+    {
       "key": "毒舌影视.js",
       "name": "💥毒舌影视💥",
       "type": 3,
@@ -43573,6 +43586,19 @@
       "group": "其他"
     },
     {
+      "key": "drpyS_采王",
+      "name": "💥采王💥",
+      "type": 4,
+      "api": "http://192.129.140.23:5757/api/采集之王[合]?pwd=dzyyds",
+      "searchable": 1,
+      "filterable": 1,
+      "quickSearch": 0,
+      "title": "采集之王[合]",
+      "lang": "ds",
+      "ext": "H4sIAAAAAAAAA9PT088qzs/Tf9ne/nJ2W/TT9W2xL+fOfNbQqAcSVjFUAQAd5YgpIQAAAA==",
+      "group": "其他"
+    },
+    {
       "key": "采集合集.py",
       "name": "💥采集合集💥",
       "type": 3,
@@ -44480,6 +44506,14 @@
       "group": "其他"
     },
     {
+      "key": "55影视",
+      "name": "👭55影视👭",
+      "type": 4,
+      "api": "http://192.129.140.23:5757/api/55影视?pwd=dzyyds",
+      "changeable": 1,
+      "group": "其他"
+    },
+    {
       "key": "PHPPHP",
       "name": "👭PHP聚合👭",
       "type": 4,
@@ -44604,6 +44638,14 @@
       "group": "其他"
     },
     {
+      "key": "可视PHP",
+      "name": "👭可视👭",
+      "type": 4,
+      "api": "http://192.129.140.23:5757/api/可视影院?pwd=dzyyds",
+      "changeable": 1,
+      "group": "其他"
+    },
+    {
       "key": "性爱大师.py",
       "name": "👭性爱大师👭",
       "type": 3,
@@ -44618,6 +44660,22 @@
       "group": "其他"
     },
     {
+      "key": "新浪PHP",
+      "name": "👭新浪👭",
+      "type": 4,
+      "api": "http://192.129.140.23:5757/api/新浪资源?do=py&pwd=dzyyds",
+      "changeable": 1,
+      "group": "其他"
+    },
+    {
+      "key": "新韩剧网PHP",
+      "name": "👭新韩剧网👭",
+      "type": 4,
+      "api": "http://192.129.140.23:5757/api/新韩剧网?do=py&pwd=dzyyds",
+      "changeable": 1,
+      "group": "其他"
+    },
+    {
       "key": "月光影视_最终版.py",
       "name": "👭月光影视36👭",
       "type": 3,
@@ -44629,6 +44687,22 @@
       "name": "👭枫叶影视👭",
       "type": 3,
       "api": "https://gh-proxy.org/https://raw.githubusercontent.com/wliqi495-create/jaychouqq/refs/heads/main/yingshi/py5/fy.py",
+      "group": "其他"
+    },
+    {
+      "key": "枫林影视PHP",
+      "name": "👭枫林影视👭",
+      "type": 4,
+      "api": "http://192.129.140.23:5757/api/枫林影视?pwd=dzyyds",
+      "changeable": 1,
+      "group": "其他"
+    },
+    {
+      "key": "泥视频PHP",
+      "name": "👭泥视频👭",
+      "type": 4,
+      "api": "http://192.129.140.23:5757/api/泥视频?pwd=dzyyds",
+      "changeable": 1,
       "group": "其他"
     },
     {
@@ -45682,6 +45756,19 @@
       "filterable": 1,
       "api": "https://gh-proxy.org/https://raw.githubusercontent.com/wliqi495-create/jaychouqq/refs/heads/main/yingshi/js/drpy2.min.js",
       "ext": "./deps/auto/1-698s/heads/main/yingshi/js7/mg.js",
+      "group": "其他"
+    },
+    {
+      "key": "catvod_荐片",
+      "name": "💥荐片💥",
+      "type": 3,
+      "api": "http://192.129.140.23:5757//cat/荐片.js?pwd=dzyyds",
+      "searchable": 1,
+      "filterable": 1,
+      "quickSearch": 1,
+      "title": "荐片",
+      "lang": "cat",
+      "ext": "",
       "group": "其他"
     },
     {

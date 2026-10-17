@@ -358,42 +358,6 @@
       "filterable": 1
     },
     {
-      "name": "kdapi酷豆",
-      "key": "11api.kdapi.info",
-      "type": 1,
-      "api": "http://api.kdapi.info/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "name": "kdapi酷豆资源",
-      "key": "11酷豆资源",
-      "type": 1,
-      "api": "https://api.kdapi.info/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "name": "kdapi酷豆",
-      "key": "11x酷豆采集",
-      "type": 1,
-      "api": "https://api.kdapi.info/api.php/provide/vod/?ac=list",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "name": "kdapi酷豆(切)",
-      "key": "11酷豆2",
-      "type": 1,
-      "api": "https://api.kdapi.info/api.php/provide/vod/at/json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "name": "kkzyKK写真资源",
       "key": "11KK写真资源",
       "type": 1,
