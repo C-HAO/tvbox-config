@@ -292,6 +292,26 @@
       "filterable": 1
     },
     {
+      "key": "kjh998_[伦理]卧龙影院",
+      "name": "[伦理]卧龙影院",
+      "type": 3,
+      "api": "https://gh-proxy.org/https://raw.githubusercontent.com/phu889/kjh998/main/py/%5B%E4%BC%A6%E7%90%86%5D%E5%8D%A7%E9%BE%99%E5%BD%B1%E9%99%A2.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "kjh998_[伦理]龙江影院",
+      "name": "[伦理]龙江影院",
+      "type": 3,
+      "api": "https://gh-proxy.org/https://raw.githubusercontent.com/phu889/kjh998/main/py/%5B%E4%BC%A6%E7%90%86%5D%E9%BE%99%E6%B1%9F%E5%BD%B1%E9%99%A2.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
       "key": "kjh998_animexin",
       "name": "animexin",
       "type": 3,
@@ -366,6 +386,16 @@
       "name": "七猫影视",
       "type": 3,
       "api": "https://gh-proxy.org/https://raw.githubusercontent.com/phu889/kjh998/main/py/%E4%B8%83%E7%8C%AB%E5%BD%B1%E8%A7%86.py",
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "kjh998_两个BT影视",
+      "name": "两个BT影视",
+      "type": 3,
+      "api": "https://gh-proxy.org/https://raw.githubusercontent.com/phu889/kjh998/main/py/%E4%B8%A4%E4%B8%AABT%E5%BD%B1%E8%A7%86.py",
       "searchable": 1,
       "changeable": 1,
       "quickSearch": 1,
