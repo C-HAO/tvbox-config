@@ -774,15 +774,6 @@
       "searchable": 1
     },
     {
-      "key": "官采",
-      "name": "🎫官采┃[采集]",
-      "type": 1,
-      "api": "https://cj.jusj.top/api.php/provide/vod/?ac=list",
-      "searchable": 1,
-      "changeable": 1,
-      "group": "综合-采集站"
-    },
-    {
       "key": "155资源站",
       "name": "155 | 采集",
       "type": 1,

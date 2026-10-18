@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18 01:14:20",
+  "updated_at": "2026-10-18 15:24:00",
   "repo": "C-HAO/tvbox-config",
   "sources": [
     {
@@ -118,7 +118,7 @@
       "checks": {
         "sites": {
           "checked": 1431,
-          "dropped": 105
+          "dropped": 106
         },
         "lives": {
           "checked": 539,
@@ -135,7 +135,7 @@
       "checks": {
         "sites": {
           "checked": 686,
-          "dropped": 4
+          "dropped": 5
         },
         "lives": {
           "checked": 558,
@@ -302,7 +302,7 @@
       "checks": {
         "sites": {
           "checked": 277,
-          "dropped": 107
+          "dropped": 106
         },
         "lives": {
           "checked": 72,

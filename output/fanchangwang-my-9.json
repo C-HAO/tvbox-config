@@ -313,22 +313,6 @@
       }
     },
     {
-      "key": "mygzycj.com",
-      "name": "成人13",
-      "type": 0,
-      "api": "http://mygzycj.com/api.php?ac=list",
-      "searchable": 1,
-      "recordable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "header": {
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
-      }
-    },
-    {
       "key": "f2dcj6.com",
       "name": "成人14",
       "type": 0,
@@ -626,6 +610,15 @@
       "filterable": 0
     },
     {
+      "key": "83",
+      "name": "爱看83",
+      "type": 0,
+      "api": "http://www.010aizy.com/API/maxs.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
       "key": "84",
       "name": "爱看84",
       "type": 1,
@@ -655,6 +648,14 @@
       "name": "爱看91",
       "type": 0,
       "api": "https://xjjzyapi.com/home/cjapi/askl/mc10/vod/xml",
+      "searchable": 1,
+      "quickSearch": 1
+    },
+    {
+      "key": "94",
+      "name": "爱看94",
+      "type": 0,
+      "api": "http://www.010aizy.com/API/macs.php",
       "searchable": 1,
       "quickSearch": 1
     },
