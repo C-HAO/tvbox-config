@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18 15:24:00",
+  "updated_at": "2026-10-19 01:28:47",
   "repo": "C-HAO/tvbox-config",
   "sources": [
     {
@@ -107,7 +107,7 @@
       "name": "linfern-av",
       "ok": false,
       "used_url": null,
-      "error": "Expecting property name enclosed in double quotes: line 185 column 73 (char 4636)"
+      "error": "404 Client Error: Not Found for url: https://raw.githubusercontent.com/linfern-mou/linfern/fa338c7d76ffccc0e6c51aac03d0d1a23d25acb5/tvbox/av.json"
     },
     {
       "id": "hebijunge-tvbox",
@@ -118,7 +118,7 @@
       "checks": {
         "sites": {
           "checked": 1431,
-          "dropped": 106
+          "dropped": 105
         },
         "lives": {
           "checked": 539,

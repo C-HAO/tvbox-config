@@ -1,5 +1,6 @@
 {
-  "spider": "https://img2.tofaka.com/autoupload/f/eja2s/20261018/jgAC/0X0/PandaQ261018.png;md5;78eb1d2b2fae8f6fd269745aa1595ed6",
+  "spider": "https://img2.tofaka.com/autoupload/f/eja2s/20261018/jgAC/0X0/PandaQ261018.png;md5;4edf6b3d3aa01efc371027324c8adbff",
+  "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
   "wallpaper": "https://深色壁纸.xxooo.cf/",
   "logo": "http://w.junce.dpdns.org/fm.gif",
   "headers": [
@@ -49230,6 +49231,23 @@
       "group": "其他"
     },
     {
+      "key": "虎牙直播js-3",
+      "name": "🐯虎牙┃直播",
+      "type": 3,
+      "api": "https://gh-proxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.js",
+      "ext": "./deps/localized/99af1afecb-huya2.js",
+      "style": {
+        "type": "rect",
+        "ratio": 1.755
+      },
+      "timeout": 10,
+      "playerType": "2",
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "group": "其他"
+    },
+    {
       "key": "虎牙直播js-4",
       "name": "🐯虎牙┃直播",
       "type": 3,
@@ -92469,6 +92487,22 @@
       }
     },
     {
+      "key": "mygzycj.com",
+      "name": "成人13",
+      "type": 0,
+      "api": "http://mygzycj.com/api.php?ac=list",
+      "searchable": 1,
+      "recordable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.33
+      },
+      "header": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
+      }
+    },
+    {
       "key": "f2dcj6.com",
       "name": "成人14",
       "type": 0,
@@ -92761,15 +92795,6 @@
       "name": "爱看82",
       "type": 0,
       "api": "https://api.maozyapi.com/inc/api.php",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "83",
-      "name": "爱看83",
-      "type": 0,
-      "api": "http://www.010aizy.com/API/maxs.php",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
