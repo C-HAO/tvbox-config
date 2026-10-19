@@ -38513,6 +38513,17 @@
       "group": "其他"
     },
     {
+      "key": "yunduo",
+      "name": "☁️┃云朵┃影视",
+      "type": 3,
+      "api": "https://xn--zq2ao005e.u.xn--dkw.xn--6qq986b3xl/py/yunduo.py",
+      "searchable": 1,
+      "quickSearch": 0,
+      "filterable": 0,
+      "changeable": 0,
+      "group": "其他"
+    },
+    {
       "key": " py_中国文化",
       "name": "♻️中国文化",
       "type": 3,
@@ -47529,6 +47540,21 @@
       "group": "其他"
     },
     {
+      "key": "Jrsjs",
+      "name": "⚽Jrs┃球迷",
+      "type": 3,
+      "api": "https://gh-proxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
+      "ext": "./deps/localized/32f1f18e14-jrk.js",
+      "style": {
+        "type": "list"
+      },
+      "timeout": 10,
+      "searchable": 0,
+      "quickSearch": 0,
+      "changeable": 0,
+      "group": "其他"
+    },
+    {
       "key": "drpy_js_有声小说吧",
       "name": "有声小说吧",
       "type": 3,
@@ -49077,11 +49103,6 @@
       "name": "🍿哔哩TV直播",
       "type": 0,
       "url": "https://445569.pages.dev/https://raw.githubusercontent.com/pan8664716/MultiLive/main/output/bilibili_live.m3u"
-    },
-    {
-      "name": "🍿玉山TV直播",
-      "type": 0,
-      "url": "https://3niao.lielangys.top/llangtv8.m3u"
     },
     {
       "name": "🍿潇雨TV直播",
