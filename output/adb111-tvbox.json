@@ -322,16 +322,6 @@
       "filterable": 1
     },
     {
-      "key": "kjh998_ik4k影院",
-      "name": "ik4k影院",
-      "type": 3,
-      "api": "https://gh-proxy.org/https://raw.githubusercontent.com/phu889/kjh998/main/py/ik4k%E5%BD%B1%E9%99%A2.py",
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "kjh998_pomo",
       "name": "pomo",
       "type": 3,

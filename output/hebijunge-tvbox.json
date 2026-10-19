@@ -47529,21 +47529,6 @@
       "group": "其他"
     },
     {
-      "key": "Jrsjs",
-      "name": "⚽Jrs┃球迷",
-      "type": 3,
-      "api": "https://gh-proxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-      "ext": "./deps/localized/32f1f18e14-jrk.js",
-      "style": {
-        "type": "list"
-      },
-      "timeout": 10,
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "group": "其他"
-    },
-    {
       "key": "drpy_js_有声小说吧",
       "name": "有声小说吧",
       "type": 3,

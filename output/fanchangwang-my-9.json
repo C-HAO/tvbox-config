@@ -313,22 +313,6 @@
       }
     },
     {
-      "key": "mygzycj.com",
-      "name": "成人13",
-      "type": 0,
-      "api": "http://mygzycj.com/api.php?ac=list",
-      "searchable": 1,
-      "recordable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "header": {
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
-      }
-    },
-    {
       "key": "f2dcj6.com",
       "name": "成人14",
       "type": 0,
@@ -365,22 +349,6 @@
       "name": "成人16",
       "type": 1,
       "api": "https://api.maozyapi.com/inc/apijson_vod.php",
-      "searchable": 1,
-      "recordable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "header": {
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
-      }
-    },
-    {
-      "key": "apittzy.com",
-      "name": "成人18",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/",
       "searchable": 1,
       "recordable": 0,
       "style": {
@@ -580,16 +548,6 @@
       "filterable": 0
     },
     {
-      "key": "77",
-      "name": "爱看77",
-      "type": 0,
-      "api": "https://apittzy.com/api.php/provide/vod/at/xml",
-      "playUrl": "https://jiexi.ttbfp1.com/m3u8/?url=",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "79",
       "name": "爱看79",
       "type": 0,
@@ -621,6 +579,15 @@
       "name": "爱看82",
       "type": 0,
       "api": "https://api.maozyapi.com/inc/api.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "83",
+      "name": "爱看83",
+      "type": 0,
+      "api": "http://www.010aizy.com/API/maxs.php",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -810,16 +777,6 @@
       "name": "爱看135",
       "type": 0,
       "api": "http://www.caiji25.com/home/cjapi/p0as/mc/vod/xml",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "138",
-      "name": "爱看138",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/?ac=list",
-      "playUrl": "https://jiexi.ttbfp1.com/m3u8/?url=",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0

@@ -49193,21 +49193,6 @@
       "group": "其他"
     },
     {
-      "key": "Jrsjs",
-      "name": "⚽Jrs┃球迷",
-      "type": 3,
-      "api": "https://gh-proxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-      "ext": "./deps/localized/32f1f18e14-jrk.js",
-      "style": {
-        "type": "list"
-      },
-      "timeout": 10,
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "group": "其他"
-    },
-    {
       "key": "drpy_js_有声小说吧",
       "name": "有声小说吧",
       "type": 3,
@@ -69224,7 +69209,7 @@
       "group": "其他"
     },
     {
-      "key": "hebijunge-recommended_Jrsjs",
+      "key": "Jrsjs",
       "name": "⚽Jrs┃球迷",
       "type": 3,
       "api": "https://gh-proxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
@@ -72264,16 +72249,6 @@
       "name": "animexin",
       "type": 3,
       "api": "https://gh-proxy.org/https://raw.githubusercontent.com/phu889/kjh998/main/py/animexin.py",
-      "searchable": 1,
-      "changeable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "adb111-tvbox_kjh998_ik4k影院",
-      "name": "ik4k影院",
-      "type": 3,
-      "api": "https://gh-proxy.org/https://raw.githubusercontent.com/phu889/kjh998/main/py/ik4k%E5%BD%B1%E9%99%A2.py",
       "searchable": 1,
       "changeable": 1,
       "quickSearch": 1,
@@ -88136,15 +88111,6 @@
       ]
     },
     {
-      "key": "探探资源",
-      "name": "探探资源",
-      "type": 0,
-      "api": "https://apittzy.com/api.php/provide/vod/at/xml",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "KK资源网",
       "name": "KK资源网",
       "type": 0,
@@ -92487,22 +92453,6 @@
       }
     },
     {
-      "key": "mygzycj.com",
-      "name": "成人13",
-      "type": 0,
-      "api": "http://mygzycj.com/api.php?ac=list",
-      "searchable": 1,
-      "recordable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "header": {
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
-      }
-    },
-    {
       "key": "f2dcj6.com",
       "name": "成人14",
       "type": 0,
@@ -92539,22 +92489,6 @@
       "name": "成人16",
       "type": 1,
       "api": "https://api.maozyapi.com/inc/apijson_vod.php",
-      "searchable": 1,
-      "recordable": 0,
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "header": {
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36(KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
-      }
-    },
-    {
-      "key": "apittzy.com",
-      "name": "成人18",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/",
       "searchable": 1,
       "recordable": 0,
       "style": {
@@ -92754,16 +92688,6 @@
       "filterable": 0
     },
     {
-      "key": "fanchangwang-my-9_77",
-      "name": "爱看77",
-      "type": 0,
-      "api": "https://apittzy.com/api.php/provide/vod/at/xml",
-      "playUrl": "https://jiexi.ttbfp1.com/m3u8/?url=",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "79",
       "name": "爱看79",
       "type": 0,
@@ -92795,6 +92719,15 @@
       "name": "爱看82",
       "type": 0,
       "api": "https://api.maozyapi.com/inc/api.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0
+    },
+    {
+      "key": "83",
+      "name": "爱看83",
+      "type": 0,
+      "api": "http://www.010aizy.com/API/maxs.php",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -92984,16 +92917,6 @@
       "name": "爱看135",
       "type": 0,
       "api": "http://www.caiji25.com/home/cjapi/p0as/mc/vod/xml",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
-      "key": "138",
-      "name": "爱看138",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/?ac=list",
-      "playUrl": "https://jiexi.ttbfp1.com/m3u8/?url=",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
@@ -93265,24 +93188,6 @@
       "key": "fanchangwang-my-10_11辣椒资源",
       "type": 1,
       "api": "https://apilj.com/api.php/provide/vod/at/json/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "name": "apittzy探探资源",
-      "key": "11*探探资源",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "name": "apittzy探探",
-      "key": "11探探",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/?ac=list",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -95135,16 +95040,6 @@
       "filterable": 0
     },
     {
-      "key": "zp137",
-      "name": "🔞探探资源（慢）",
-      "type": 0,
-      "api": "https://apittzy.com/api.php/provide/vod/at/xml/",
-      "playUrl": "https://jiexi.ttbfp1.com/m3u8/?url=",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "dongge0504-yscr_wmcj8.com",
       "name": "成人07",
       "type": 0,
@@ -95187,14 +95082,6 @@
       "quickSearch": 0
     },
     {
-      "key": "💞探探资源💞",
-      "name": "💞探探资源💞",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/",
-      "searchable": 0,
-      "quickSearch": 0
-    },
-    {
       "key": "dongge0504-yscr_feifei67.com",
       "name": "成人22",
       "type": 1,
@@ -95227,15 +95114,6 @@
       "api": "https://dadiapi.com/api.php",
       "searchable": 0,
       "quickSearch": 0
-    },
-    {
-      "key": "dongge0504-yscr_apittzy.com",
-      "name": "成人47",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/",
-      "quickSearch": 1,
-      "searchable": 1,
-      "filterable": 1
     },
     {
       "key": "💞香奶儿资源💞",
@@ -95314,14 +95192,6 @@
       "name": "番号资源(卡切)",
       "type": 1,
       "api": "http://fhapi9.com/api.php/provide/vod/at/json",
-      "searchable": 1,
-      "quickSearch": 1
-    },
-    {
-      "key": "dongge0504-yscr_探探资源",
-      "name": "探探资源(切)",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1
     },
@@ -95441,13 +95311,6 @@
       "api": "https://api.maozyapi.com/inc/api.php"
     },
     {
-      "key": "*探探",
-      "name": "*探探",
-      "type": 0,
-      "api": "https://apittzy.com/api.php/provide/vod/at/xml",
-      "playUrl": "https://jiexi.ttbfp1.com/m3u8/?url="
-    },
-    {
       "key": "*乐播",
       "name": "*乐播",
       "type": 0,
@@ -95467,14 +95330,6 @@
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0
-    },
-    {
-      "key": "*探探资源",
-      "name": "*探探资源",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/",
-      "searchable": 0,
-      "quickSearch": 0
     },
     {
       "key": "*环亚资源",
@@ -96731,15 +96586,6 @@
       "ext": "proxy"
     },
     {
-      "key": "dongge0504-xhd_探探",
-      "name": "探探 | 采集",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/",
-      "searchable": 0,
-      "quickSearch": 0,
-      "ext": "proxy"
-    },
-    {
       "key": "玉兔",
       "name": "玉兔 | 采集",
       "type": 1,
@@ -97725,15 +97571,6 @@
       "quickSearch": 1,
       "searchable": 1,
       "changeable": 1,
-      "ext": "proxy"
-    },
-    {
-      "key": "dongge0504-funfull_探探",
-      "name": "探探 | 采集",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/",
-      "searchable": 0,
-      "quickSearch": 0,
       "ext": "proxy"
     },
     {

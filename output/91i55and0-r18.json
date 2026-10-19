@@ -1,15 +1,6 @@
 {
   "sites": [
     {
-      "key": "探探资源",
-      "name": "探探资源",
-      "type": 0,
-      "api": "https://apittzy.com/api.php/provide/vod/at/xml",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "key": "KK资源网",
       "name": "KK资源网",
       "type": 0,

@@ -295,24 +295,6 @@
       "filterable": 1
     },
     {
-      "name": "apittzy探探资源",
-      "key": "11*探探资源",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "name": "apittzy探探",
-      "key": "11探探",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/?ac=list",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
       "name": "ckzyCK资源",
       "key": "11CK2",
       "type": 1,

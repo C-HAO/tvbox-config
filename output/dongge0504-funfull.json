@@ -947,15 +947,6 @@
       "ext": "proxy"
     },
     {
-      "key": "探探",
-      "name": "探探 | 采集",
-      "type": 1,
-      "api": "https://apittzy.com/api.php/provide/vod/",
-      "searchable": 0,
-      "quickSearch": 0,
-      "ext": "proxy"
-    },
-    {
       "key": "玉兔",
       "name": "玉兔 | 采集",
       "type": 1,
