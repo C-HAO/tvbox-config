@@ -47540,21 +47540,6 @@
       "group": "其他"
     },
     {
-      "key": "Jrsjs",
-      "name": "⚽Jrs┃球迷",
-      "type": 3,
-      "api": "https://gh-proxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-      "ext": "./deps/localized/32f1f18e14-jrk.js",
-      "style": {
-        "type": "list"
-      },
-      "timeout": 10,
-      "searchable": 0,
-      "quickSearch": 0,
-      "changeable": 0,
-      "group": "其他"
-    },
-    {
       "key": "drpy_js_有声小说吧",
       "name": "有声小说吧",
       "type": 3,
@@ -48903,12 +48888,6 @@
       "timeout": 10
     },
     {
-      "name": "夜空",
-      "type": 0,
-      "url": "https://pan.szfx.top/down.php/4f5dad27633e1293d7ef2317ee9c801e.txt",
-      "timeout": 10
-    },
-    {
       "name": "夜空1",
       "type": 0,
       "url": "https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt",
@@ -48924,12 +48903,6 @@
       "name": "很少",
       "type": 0,
       "url": "https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt",
-      "timeout": 10
-    },
-    {
-      "name": "划了",
-      "type": 0,
-      "url": "https://pan.szfx.top/down.php/dcb0cc6a6935b5e62b2659eba6718471.txt",
       "timeout": 10
     },
     {
@@ -49362,11 +49335,6 @@
       "name": "🔞大秀TV[直播]",
       "type": 0,
       "url": "https://proxy.api.030101.xyz/https://omds.zzong6599.workers.dev/live.m3u"
-    },
-    {
-      "name": "🔞台湾TV[直播]",
-      "type": 1,
-      "url": "https://pan.szfx.top/down.php/46a3539ac0df0c32687ea8079addec15.txt"
     },
     {
       "name": "☁云霄IPTV直播",

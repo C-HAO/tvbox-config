@@ -12434,18 +12434,6 @@
       "group": "综合-网盘"
     },
     {
-      "key": "分享",
-      "name": "枫叶",
-      "type": 3,
-      "api": "https://pan.szfx.top/down.php/b963d79ea0ea6e386515863d823eab89.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "changeable": 1,
-      "playable": 1,
-      "group": "综合-网盘"
-    },
-    {
       "key": "Pandalive.py",
       "name": "💥Pandalive💥",
       "type": 3,
@@ -12454,14 +12442,6 @@
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 0,
-      "group": "综合-网盘"
-    },
-    {
-      "key": "皮皮虾",
-      "name": "[367ms|直播] ♨️皮虾｜皮皮",
-      "type": 3,
-      "api": "https://pan.szfx.top/down.php/540e0c721a30390c4f5d2d77b8286905.py",
-      "ext": "http://43.248.117.123:4680",
       "group": "综合-网盘"
     },
     {
@@ -21110,12 +21090,6 @@
       "timeout": 10
     },
     {
-      "name": "夜空",
-      "type": 0,
-      "url": "https://pan.szfx.top/down.php/4f5dad27633e1293d7ef2317ee9c801e.txt",
-      "timeout": 10
-    },
-    {
       "name": "夜空1",
       "type": 0,
       "url": "https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt",
@@ -21131,12 +21105,6 @@
       "name": "很少",
       "type": 0,
       "url": "https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt",
-      "timeout": 10
-    },
-    {
-      "name": "划了",
-      "type": 0,
-      "url": "https://pan.szfx.top/down.php/dcb0cc6a6935b5e62b2659eba6718471.txt",
       "timeout": 10
     },
     {
@@ -21581,11 +21549,6 @@
       "name": "🔞大秀TV[直播]",
       "type": 0,
       "url": "https://proxy.api.030101.xyz/https://omds.zzong6599.workers.dev/live.m3u"
-    },
-    {
-      "name": "🔞台湾TV[直播]",
-      "type": 1,
-      "url": "https://pan.szfx.top/down.php/46a3539ac0df0c32687ea8079addec15.txt"
     },
     {
       "name": "☁云霄IPTV直播",

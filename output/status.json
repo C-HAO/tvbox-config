@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20 15:35:04",
+  "updated_at": "2026-10-21 02:41:48",
   "repo": "C-HAO/tvbox-config",
   "sources": [
     {
@@ -100,7 +100,7 @@
       "name": "潇洒",
       "ok": false,
       "used_url": null,
-      "error": "404 Client Error:  for url: https://9877.kstore.space/AnotherD/api.json"
+      "error": "502 Server Error: Bad Gateway for url: https://9877.kstore.space/AnotherD/api.json"
     },
     {
       "id": "linfern-av",
@@ -118,11 +118,11 @@
       "checks": {
         "sites": {
           "checked": 1431,
-          "dropped": 104
+          "dropped": 105
         },
         "lives": {
           "checked": 539,
-          "dropped": 110
+          "dropped": 113
         }
       }
     },
@@ -135,11 +135,11 @@
       "checks": {
         "sites": {
           "checked": 686,
-          "dropped": 3
+          "dropped": 5
         },
         "lives": {
           "checked": 558,
-          "dropped": 110
+          "dropped": 113
         }
       }
     },
@@ -302,7 +302,7 @@
       "checks": {
         "sites": {
           "checked": 277,
-          "dropped": 111
+          "dropped": 113
         },
         "lives": {
           "checked": 72,
