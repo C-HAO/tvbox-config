@@ -1,6 +1,6 @@
 {
   "spider": "http://иӮҘзҢ«.net/spider.php;md5;2d842238d97d949fef5c679cb876f81d",
-  "danmaku": "http://127.0.0.1:9978/proxy?do=danmaku&name={name}&episode={episode}",
+  "danmaku": "http://xn--z7x900a.net/danmu5266/auto.php?name={name}&episode={episode}",
   "wallpaper": "https://ж·ұиүІеЈҒзәё.xxooo.cf/",
   "logo": "http://w.junce.dpdns.org/fm.gif",
   "headers": [
@@ -61854,6 +61854,18 @@
       "group": "综合-网盘"
     },
     {
+      "key": "分享",
+      "name": "枫叶",
+      "type": 3,
+      "api": "https://pan.szfx.top/down.php/b963d79ea0ea6e386515863d823eab89.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "playable": 1,
+      "group": "综合-网盘"
+    },
+    {
       "key": "hebijunge-recommended_Pandalive.py",
       "name": "💥Pandalive💥",
       "type": 3,
@@ -61862,6 +61874,14 @@
       "quickSearch": 0,
       "filterable": 0,
       "changeable": 0,
+      "group": "综合-网盘"
+    },
+    {
+      "key": "皮皮虾",
+      "name": "[367ms|直播] ♨️皮虾｜皮皮",
+      "type": 3,
+      "api": "https://pan.szfx.top/down.php/540e0c721a30390c4f5d2d77b8286905.py",
+      "ext": "http://43.248.117.123:4680",
       "group": "综合-网盘"
     },
     {
@@ -92766,15 +92786,6 @@
       "filterable": 0
     },
     {
-      "key": "83",
-      "name": "爱看83",
-      "type": 0,
-      "api": "http://www.010aizy.com/API/maxs.php",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0
-    },
-    {
       "key": "84",
       "name": "爱看84",
       "type": 1,
@@ -98844,6 +98855,12 @@
       "timeout": 10
     },
     {
+      "name": "夜空",
+      "type": 0,
+      "url": "https://pan.szfx.top/down.php/4f5dad27633e1293d7ef2317ee9c801e.txt",
+      "timeout": 10
+    },
+    {
       "name": "夜空1",
       "type": 0,
       "url": "https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt",
@@ -98859,6 +98876,12 @@
       "name": "很少",
       "type": 0,
       "url": "https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt",
+      "timeout": 10
+    },
+    {
+      "name": "划了",
+      "type": 0,
+      "url": "https://pan.szfx.top/down.php/dcb0cc6a6935b5e62b2659eba6718471.txt",
       "timeout": 10
     },
     {
@@ -99044,6 +99067,11 @@
       "name": "🍿哔哩TV直播",
       "type": 0,
       "url": "https://445569.pages.dev/https://raw.githubusercontent.com/pan8664716/MultiLive/main/output/bilibili_live.m3u"
+    },
+    {
+      "name": "🍿玉山TV直播",
+      "type": 0,
+      "url": "https://3niao.lielangys.top/llangtv8.m3u"
     },
     {
       "name": "🍿潇雨TV直播",
@@ -99286,6 +99314,11 @@
       "name": "🔞大秀TV[直播]",
       "type": 0,
       "url": "https://proxy.api.030101.xyz/https://omds.zzong6599.workers.dev/live.m3u"
+    },
+    {
+      "name": "🔞台湾TV[直播]",
+      "type": 1,
+      "url": "https://pan.szfx.top/down.php/46a3539ac0df0c32687ea8079addec15.txt"
     },
     {
       "name": "☁云霄IPTV直播",
