@@ -38971,18 +38971,6 @@
       "group": "其他"
     },
     {
-      "key": "dbokutv_key",
-      "name": "🐼｜独播库",
-      "type": 3,
-      "api": "https://files.catbox.moe/gd1tos.js",
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "changeable": 1,
-      "group": "其他"
-    },
-    {
       "key": "cat_星辰影院",
       "name": "💝分享星辰",
       "type": 3,
@@ -63889,18 +63877,6 @@
       "type": 3,
       "api": "https://szyyds.cn/js/6F02.js",
       "ext": "./deps/auto/1-62s/js/930ec.js",
-      "group": "其他"
-    },
-    {
-      "key": "hebijunge-recommended_dbokutv_key",
-      "name": "🐼｜独播库",
-      "type": 3,
-      "api": "https://files.catbox.moe/gd1tos.js",
-      "style": {
-        "type": "rect",
-        "ratio": 1.33
-      },
-      "changeable": 1,
       "group": "其他"
     },
     {
@@ -98836,6 +98812,12 @@
       "timeout": 10
     },
     {
+      "name": "夜空",
+      "type": 0,
+      "url": "https://pan.szfx.top/down.php/4f5dad27633e1293d7ef2317ee9c801e.txt",
+      "timeout": 10
+    },
+    {
       "name": "夜空1",
       "type": 0,
       "url": "https://pan.29o.cn/down.php/aa846bceb7a1b4adb0385b1f61b192e8.txt",
@@ -98851,6 +98833,12 @@
       "name": "很少",
       "type": 0,
       "url": "https://mpimg.cn/down.php/fa04b02ffac54ac877f5250d3d70e494.txt",
+      "timeout": 10
+    },
+    {
+      "name": "划了",
+      "type": 0,
+      "url": "https://pan.szfx.top/down.php/dcb0cc6a6935b5e62b2659eba6718471.txt",
       "timeout": 10
     },
     {
@@ -99190,12 +99178,6 @@
       "url": "./ext/iptv.txt"
     },
     {
-      "name": "🐬juli",
-      "type": 0,
-      "ua": "okhttp/5.3.2",
-      "url": "https://files.catbox.moe/h3mb5a.txt"
-    },
-    {
       "name": "🐬小新TV",
       "type": 0,
       "ua": "okhttp/5.3.2",
@@ -99283,6 +99265,11 @@
       "name": "🔞大秀TV[直播]",
       "type": 0,
       "url": "https://proxy.api.030101.xyz/https://omds.zzong6599.workers.dev/live.m3u"
+    },
+    {
+      "name": "🔞台湾TV[直播]",
+      "type": 1,
+      "url": "https://pan.szfx.top/down.php/46a3539ac0df0c32687ea8079addec15.txt"
     },
     {
       "name": "☁云霄IPTV直播",
@@ -100177,12 +100164,6 @@
       "type": 0,
       "ua": "okhttp/5.3.2",
       "url": "https://wget.la/https://raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt"
-    },
-    {
-      "name": "juli",
-      "type": 0,
-      "ua": "okhttp/5.3.2",
-      "url": "https://files.catbox.moe/h3mb5a.txt"
     },
     {
       "name": "小新TV",
