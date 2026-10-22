@@ -30363,17 +30363,6 @@
       "group": "综合-网盘"
     },
     {
-      "key": "drpy_js_Alist-3",
-      "name": " 🎑Alist[DRPY]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://github.com/heroaku/drpy/raw/master/libs/alist.min.js",
-      "searchable": 1,
-      "quickSearch": 0,
-      "filterable": 0,
-      "ext": "./deps/localized/a58f0ffed7-alist_drpy.json",
-      "group": "综合-网盘"
-    },
-    {
       "key": "夸克影院.js",
       "name": "💥夸克影院💥",
       "type": 3,
@@ -37360,14 +37349,6 @@
       "group": "其他"
     },
     {
-      "key": "live",
-      "name": "💻电视直播",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://github.com/c120487/00/raw/main/api/直播转点播.js",
-      "ext": "Peter1$https://ghproxy.com/https://raw.githubusercontent.com/c120487/00/main/00live05151.txt#Peter2$https://ghproxy.com/https://raw.githubusercontent.com/c120487/00/main/00live05152.txt#Peter3$https://ghproxy.com/https://raw.githubusercontent.com/c120487/00/main/00live05153.txt#FongMi$https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/txt/adult.txt#Gaotian$https://ghproxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/listx.txt",
-      "group": "其他"
-    },
-    {
       "key": "西瓜影视",
       "name": "🦋 西瓜影视.js",
       "type": 3,
@@ -38012,20 +37993,6 @@
       "group": "其他"
     },
     {
-      "key": "5005075157250987989",
-      "name": "aliluya1977 [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/aliluya1977/TVBox/35b1b50ee77ee4e422fc2b9cb83ac0668016305e/xm.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 99.97,
-        "latency_ms": 53
-      },
-      "group": "其他"
-    },
-    {
       "key": "kjh998_animexin",
       "name": "animexin",
       "type": 3,
@@ -38034,34 +38001,6 @@
       "changeable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "group": "其他"
-    },
-    {
-      "key": "7946961423530034118",
-      "name": "catvod-mj [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/CatVodTV/CatTV.github.io/337cd299e699ca0d49b7bf35e29b8b38068572d5/mj.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 99.93,
-        "latency_ms": 146
-      },
-      "group": "其他"
-    },
-    {
-      "key": "9150098249892745759",
-      "name": "cnnbgo [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/cnnbgo/tvbox/f2afa9065deb1c2c2341df2776abdc6b02c5913f/x.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 100.0,
-        "latency_ms": 9
-      },
       "group": "其他"
     },
     {
@@ -38079,34 +38018,6 @@
       "group": "其他"
     },
     {
-      "key": "2734127445329185456",
-      "name": "freedtv-box [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/FreeDTV/FreeD/2511407b95ec434cf5d9e65f36aac63141c4a7ba/box.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 99.99,
-        "latency_ms": 23
-      },
-      "group": "其他"
-    },
-    {
-      "key": "1594445473539745003",
-      "name": "gaotianliuyun-js [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/gaotianliuyun/gao/8213bb046f4dce746b5f2ddcddb13a336d0b0d60/js.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 99.99,
-        "latency_ms": 15
-      },
-      "group": "其他"
-    },
-    {
       "key": "1833601927077413960",
       "name": "gh-proxy.com [快]",
       "type": 3,
@@ -38117,20 +38028,6 @@
       "ext": {
         "health_score": 93.19,
         "latency_ms": 153
-      },
-      "group": "其他"
-    },
-    {
-      "key": "5109858688803842297",
-      "name": "guot55 [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/guot55/yg/d0879e44c351c7ede52709ae4194a0c1f692855f/jsm.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 99.94,
-        "latency_ms": 119
       },
       "group": "其他"
     },
@@ -38174,20 +38071,6 @@
       "group": "其他"
     },
     {
-      "key": "3490492011684399702",
-      "name": "jak0099 [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/jak0099/dr/f2aa3691d11a6e198714fe14d445341576cba193/dr2.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 99.99,
-        "latency_ms": 29
-      },
-      "group": "其他"
-    },
-    {
       "key": "js集合",
       "name": "js集合",
       "type": 4,
@@ -38201,20 +38084,6 @@
       "group": "其他"
     },
     {
-      "key": "5265207397011986833",
-      "name": "liu673cn-box [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/liu673cn/box/bac55898bcd4710a46245e37646b48c6a16ef0bd/m.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 99.2,
-        "latency_ms": 11
-      },
-      "group": "其他"
-    },
-    {
       "key": "3743094571226914065",
       "name": "liu673cn.github.io [快]",
       "type": 3,
@@ -38225,34 +38094,6 @@
       "ext": {
         "health_score": 89.66,
         "latency_ms": 85
-      },
-      "group": "其他"
-    },
-    {
-      "key": "4545252315253832212",
-      "name": "mcp2016 [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/mcp2016/TVBox/848272f1eaf98a3e10042681919c2ad2fa92daea/pj.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 99.99,
-        "latency_ms": 29
-      },
-      "group": "其他"
-    },
-    {
-      "key": "4471490133607600420",
-      "name": "myhomebox [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/myhomebox/tv/c5142631f61c4e649bc615f5625066783ef38883/yt.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 99.99,
-        "latency_ms": 13
       },
       "group": "其他"
     },
@@ -38324,20 +38165,6 @@
       "group": "其他"
     },
     {
-      "key": "4515692997353761647",
-      "name": "tiantaiyx-0 [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/tiantaiyx/tvbox/d97a57c12bc0ac189cda5acfe530394e03d80371/0.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 99.95,
-        "latency_ms": 108
-      },
-      "group": "其他"
-    },
-    {
       "key": "kjh998_vidhub",
       "name": "vidhub",
       "type": 3,
@@ -38346,20 +38173,6 @@
       "changeable": 1,
       "quickSearch": 1,
       "filterable": 1,
-      "group": "其他"
-    },
-    {
-      "key": "5717825839783926176",
-      "name": "wlcmc1972 [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/wlcmc1972/tvbox/15df8ab0379d8a2ee58c4b86a957e36e2f796337/t1.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 100.0,
-        "latency_ms": 10
-      },
       "group": "其他"
     },
     {
@@ -38373,48 +38186,6 @@
       "ext": {
         "health_score": 99.9,
         "latency_ms": 209
-      },
-      "group": "其他"
-    },
-    {
-      "key": "5881735630715593400",
-      "name": "yueer59 [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/yueer59/Tvbox/74ee1483b67e73767fe67bf3a2d4d6502c4cafcd/api.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 98.64,
-        "latency_ms": 124
-      },
-      "group": "其他"
-    },
-    {
-      "key": "2183401185738437384",
-      "name": "yw88075 [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/yw88075/tvbox/5df857abc263fda3c3e6cb1c285229f4d5e02230/yw.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 99.99,
-        "latency_ms": 14
-      },
-      "group": "其他"
-    },
-    {
-      "key": "3498217529714509078",
-      "name": "zhanghong1983 [快]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://raw.githubusercontent.com/zhanghong1983/tvboxzy/f8261b0d32e893aa9372fd385f5fb5c421fcdde2/XBPQ.json",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "ext": {
-        "health_score": 99.99,
-        "latency_ms": 23
       },
       "group": "其他"
     },
@@ -43789,16 +43560,6 @@
       "group": "其他"
     },
     {
-      "key": "金牌",
-      "name": "🥇嗷嗚金牌✨",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://github.com/franksun1211/TXT/raw/main/TVbox/VS194-SU147/drpy_js/金牌.py",
-      "searchable": 1,
-      "filterable": 0,
-      "changeable": 0,
-      "group": "其他"
-    },
-    {
       "key": "4KYY",
       "name": "🦋 4K影院.py",
       "type": 3,
@@ -45809,14 +45570,6 @@
       "group": "其他"
     },
     {
-      "key": "drpy_js_test",
-      "name": " 🎑js测试[DRPY]",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://github.com/heroaku/drpy/raw/master/libs/drpy.min.js",
-      "ext": "https://gh.halonice.com/https://github.com/heroaku/TVboxo/raw/main/Js/%E6%A8%A1%E7%89%88/jstest.js",
-      "group": "其他"
-    },
-    {
       "key": "drpy_js_小宝影院-2",
       "name": " 🎑小宝影院 🚪[DRPY]",
       "type": 3,
@@ -47581,6 +47334,17 @@
       "group": "其他"
     },
     {
+      "key": "csp_zhibo_bili",
+      "name": "💥哔哩直播",
+      "type": 3,
+      "api": "https://www.agit.ai/fantaiying/dr_py/raw/branch/main/libs/drpy2.min.js",
+      "searchable": 0,
+      "quickSearch": 0,
+      "filterable": 1,
+      "ext": "https://agit.ai/fantaiying/dr_py/raw/branch/main/js/哔哩直播.js",
+      "group": "其他"
+    },
+    {
       "key": "csp_zhibo_douyu",
       "name": "💥斗鱼直播",
       "type": 3,
@@ -47923,38 +47687,9 @@
       "url": "https://sub.ottiptv.cc/yylunbo.m3u"
     },
     {
-      "name": "Kimentanm",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-      "playerType": 2
-    },
-    {
       "name": "wqwqwq",
       "type": 0,
       "url": "https://la1.wqwqwq.sbs/tv.m3u"
-    },
-    {
-      "name": "suxuang",
-      "type": "0",
-      "pass": true,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "Guovin",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u"
-    },
-    {
-      "name": "mlzlzj",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/mlzlzj/TV/main/output/result.m3u"
-    },
-    {
-      "name": "gambiarras",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/gambiarras/legal-iptv/refs/heads/main/playlist.m3u"
     },
     {
       "name": "epg.pw All",
@@ -48123,14 +47858,6 @@
       "ua": ""
     },
     {
-      "name": "LIVEfl",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/zeee-u/lzh06/main/fl.m3u",
-      "playerType": 1,
-      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
-    },
-    {
       "name": "x315601",
       "url": "http://x315601.serv00.net/10.php",
       "type": 0,
@@ -48191,44 +47918,8 @@
       "url": "https://develop202.github.io/migu_video/interface.txt"
     },
     {
-      "name": "潇洒AI直播(m3u)",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/PizazzGY/TV/master/output/user_result.m3u"
-    },
-    {
-      "name": "IPTV默认源",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u"
-    },
-    {
-      "name": "IPTV-IPv4",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u"
-    },
-    {
-      "name": "IPTV-IPv6",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u"
-    },
-    {
-      "name": "myIPTV-IPv4",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u"
-    },
-    {
-      "name": "myIPTV-IPv6",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u"
-    },
-    {
-      "name": "BurningC4",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u"
-    },
-    {
-      "name": "茶客源",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/vamoschuck/TV/main/M3U"
-    },
-    {
       "name": "范明明IPV6",
       "url": "https://live.fanmingming.cn/tv/m3u/ipv6.m3u"
-    },
-    {
-      "name": "YueChan",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u"
     },
     {
       "name": "develop202",
@@ -48345,14 +48036,6 @@
           "ts"
         ]
       }
-    },
-    {
-      "name": "BMCH",
-      "type": "0",
-      "pass": true,
-      "url": "https://gh.halonice.com/https:/raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.m3u",
-      "epg": "https://epg.v1.mk/json?ch={name}&date={date}",
-      "logo": "https://epg.v1.mk/logo/{name}.png"
     },
     {
       "name": "Tianmu",
@@ -48814,22 +48497,6 @@
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
-      "name": "LIVE_home",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/joevess/IPTV/refs/heads/main/home.m3u8",
-      "playerType": 1,
-      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
-    },
-    {
-      "name": "LIVE_Gather",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/YanG-1989/m3u/refs/heads/main/Gather.m3u",
-      "playerType": 1,
-      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
-    },
-    {
       "name": "24live",
       "type": 0,
       "url": "https://urlzf.zone.id/iptv-api/output/user_result.m3u",
@@ -49154,13 +48821,6 @@
       "ua": ""
     },
     {
-      "name": "🐬综合直播 海豚影视交流群 TG：@hshsjk9",
-      "type": 0,
-      "playerType": 2,
-      "ua": "okhttp",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/fleung49/star/refs/heads/main/mit"
-    },
-    {
       "name": "🐬风云源 海豚影视永久免费如有收费的都是骗子",
       "type": 0,
       "ua": "okhttp",
@@ -49184,12 +48844,6 @@
       "type": 0,
       "ua": "okhttp/5.3.2",
       "url": "./ext/interface.txt"
-    },
-    {
-      "name": "🐬地方直播2",
-      "type": 0,
-      "ua": "okhttp/5.3.2",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u"
     },
     {
       "name": "🐬薄荷直播",
@@ -49238,12 +48892,6 @@
       "type": 0,
       "ua": "okhttp",
       "url": "http://82.156.243.185:33389/fwc.m3u"
-    },
-    {
-      "name": "🐬国际TV",
-      "type": 0,
-      "ua": "okhttp",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/all_merged.m3u"
     },
     {
       "name": "🐬裤佬TV",
@@ -49496,14 +49144,6 @@
       "name": "🍬联通🍬",
       "type": 0,
       "url": "./ext/联通",
-      "playerType": 2,
-      "ua": "okhttp/3.15",
-      "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}"
-    },
-    {
-      "name": "🍬电信🍬",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
       "playerType": 2,
       "ua": "okhttp/3.15",
       "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}"
@@ -49807,30 +49447,6 @@
       "type": 0,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "Guovin·央视",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/lives/live_cctv.txt",
-      "epg": "https://live.fanmingming.cn/e.xml"
-    },
-    {
-      "name": "Guovin·卫视",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/lives/live_weishi.txt",
-      "epg": "https://live.fanmingming.cn/e.xml"
-    },
-    {
-      "name": "Guovin·港台",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/lives/live_gangtai.txt",
-      "epg": "https://live.fanmingming.cn/e.xml"
-    },
-    {
-      "name": "Guovin·其他",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/lives/live_other.txt",
-      "epg": "https://live.fanmingming.cn/e.xml"
     },
     {
       "name": "软件小哥哥",
@@ -50263,12 +49879,6 @@
       "type": 0,
       "ua": "okhttp",
       "url": "http://iptv.4666888.xyz/FYTV.txt"
-    },
-    {
-      "name": "飞扬源",
-      "type": 0,
-      "ua": "okhttp",
-      "url": "https://www.985pan.com/down.php/bf5e9607ff407fcdd71f63928ea5bc79.txt"
     },
     {
       "name": "港奥台国际",

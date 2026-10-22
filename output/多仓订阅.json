@@ -81,12 +81,16 @@
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-16-4.json"
     },
     {
-      "name": "PG本地包",
+      "name": "凯速",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-16-6.json"
     },
     {
-      "name": "真心本地包",
+      "name": "PG本地包",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-16-7.json"
+    },
+    {
+      "name": "真心本地包",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/hkuc-url-16-8.json"
     },
     {
       "name": "91i55and0-R18",
@@ -113,24 +117,28 @@
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-4.json"
     },
     {
-      "name": "PG本地包",
+      "name": "凯速",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-6.json"
     },
     {
-      "name": "真心本地包",
+      "name": "PG本地包",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-7.json"
     },
     {
-      "name": "神州天上人间",
+      "name": "真心本地包",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-8.json"
     },
     {
-      "name": "18live",
+      "name": "神州天上人间",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-9.json"
     },
     {
-      "name": "19",
+      "name": "18live",
       "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-10.json"
+    },
+    {
+      "name": "19",
+      "url": "https://raw.githubusercontent.com/C-HAO/tvbox-config/develop/output/fanchangwang-my-11.json"
     },
     {
       "name": "dongge0504-影视成人",

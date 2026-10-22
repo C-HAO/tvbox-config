@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22 15:33:43",
+  "updated_at": "2026-10-23 02:41:29",
   "repo": "C-HAO/tvbox-config",
   "sources": [
     {
@@ -118,11 +118,11 @@
       "checks": {
         "sites": {
           "checked": 1431,
-          "dropped": 106
+          "dropped": 124
         },
         "lives": {
           "checked": 539,
-          "dropped": 113
+          "dropped": 140
         }
       }
     },
@@ -135,11 +135,11 @@
       "checks": {
         "sites": {
           "checked": 686,
-          "dropped": 6
+          "dropped": 8
         },
         "lives": {
           "checked": 558,
-          "dropped": 113
+          "dropped": 140
         }
       }
     },
@@ -203,8 +203,8 @@
           "dropped": 16
         },
         "lives": {
-          "checked": 101,
-          "dropped": 36
+          "checked": 102,
+          "dropped": 38
         }
       },
       "children": [
@@ -222,7 +222,8 @@
         "hkuc-url-16-1",
         "hkuc-url-16-4",
         "hkuc-url-16-6",
-        "hkuc-url-16-7"
+        "hkuc-url-16-7",
+        "hkuc-url-16-8"
       ]
     },
     {
@@ -234,7 +235,7 @@
       "checks": {
         "sites": {
           "checked": 101,
-          "dropped": 40
+          "dropped": 41
         },
         "lives": {
           "checked": 1,
@@ -302,11 +303,11 @@
       "checks": {
         "sites": {
           "checked": 277,
-          "dropped": 112
+          "dropped": 111
         },
         "lives": {
-          "checked": 72,
-          "dropped": 23
+          "checked": 73,
+          "dropped": 25
         }
       },
       "children": [
@@ -316,7 +317,8 @@
         "fanchangwang-my-7",
         "fanchangwang-my-8",
         "fanchangwang-my-9",
-        "fanchangwang-my-10"
+        "fanchangwang-my-10",
+        "fanchangwang-my-11"
       ]
     },
     {

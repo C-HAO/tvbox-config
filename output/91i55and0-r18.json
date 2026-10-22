@@ -505,14 +505,6 @@
       "filterable": 0
     },
     {
-      "key": "QQ传媒",
-      "name": "QQ传媒",
-      "type": 1,
-      "api": "https://qqcm.sbs/api.php/provide/vod/",
-      "searchable": 0,
-      "quickSearch": 0
-    },
-    {
       "key": "鸡坤资源",
       "name": "鸡坤资源",
       "type": 1,

@@ -14525,14 +14525,6 @@
       "group": "其他"
     },
     {
-      "key": "live",
-      "name": "💻电视直播",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://github.com/c120487/00/raw/main/api/直播转点播.js",
-      "ext": "Peter1$https://ghproxy.com/https://raw.githubusercontent.com/c120487/00/main/00live05151.txt#Peter2$https://ghproxy.com/https://raw.githubusercontent.com/c120487/00/main/00live05152.txt#Peter3$https://ghproxy.com/https://raw.githubusercontent.com/c120487/00/main/00live05153.txt#FongMi$https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/txt/adult.txt#Gaotian$https://ghproxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/listx.txt",
-      "group": "其他"
-    },
-    {
       "key": "西瓜影视",
       "name": "🦋 西瓜影视.js",
       "type": 3,
@@ -18282,16 +18274,6 @@
       "group": "其他"
     },
     {
-      "key": "金牌",
-      "name": "🥇嗷嗚金牌✨",
-      "type": 3,
-      "api": "https://gh.halonice.com/https://github.com/franksun1211/TXT/raw/main/TVbox/VS194-SU147/drpy_js/金牌.py",
-      "searchable": 1,
-      "filterable": 0,
-      "changeable": 0,
-      "group": "其他"
-    },
-    {
       "key": "4KYY",
       "name": "🦋 4K影院.py",
       "type": 3,
@@ -20082,38 +20064,9 @@
       "url": "https://sub.ottiptv.cc/yylunbo.m3u"
     },
     {
-      "name": "Kimentanm",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-      "playerType": 2
-    },
-    {
       "name": "wqwqwq",
       "type": 0,
       "url": "https://la1.wqwqwq.sbs/tv.m3u"
-    },
-    {
-      "name": "suxuang",
-      "type": "0",
-      "pass": true,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u",
-      "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-      "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "Guovin",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u"
-    },
-    {
-      "name": "mlzlzj",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/mlzlzj/TV/main/output/result.m3u"
-    },
-    {
-      "name": "gambiarras",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/gambiarras/legal-iptv/refs/heads/main/playlist.m3u"
     },
     {
       "name": "epg.pw All",
@@ -20295,14 +20248,6 @@
       "ua": ""
     },
     {
-      "name": "LIVEfl",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/zeee-u/lzh06/main/fl.m3u",
-      "playerType": 1,
-      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
-    },
-    {
       "name": "x315601",
       "url": "http://x315601.serv00.net/10.php",
       "type": 0,
@@ -20363,44 +20308,8 @@
       "url": "https://develop202.github.io/migu_video/interface.txt"
     },
     {
-      "name": "潇洒AI直播(m3u)",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/PizazzGY/TV/master/output/user_result.m3u"
-    },
-    {
-      "name": "IPTV默认源",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u"
-    },
-    {
-      "name": "IPTV-IPv4",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u"
-    },
-    {
-      "name": "IPTV-IPv6",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u"
-    },
-    {
-      "name": "myIPTV-IPv4",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u"
-    },
-    {
-      "name": "myIPTV-IPv6",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u"
-    },
-    {
-      "name": "BurningC4",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u"
-    },
-    {
-      "name": "茶客源",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/vamoschuck/TV/main/M3U"
-    },
-    {
       "name": "范明明IPV6",
       "url": "https://live.fanmingming.cn/tv/m3u/ipv6.m3u"
-    },
-    {
-      "name": "YueChan",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u"
     },
     {
       "name": "develop202",
@@ -20517,14 +20426,6 @@
           "ts"
         ]
       }
-    },
-    {
-      "name": "BMCH",
-      "type": "0",
-      "pass": true,
-      "url": "https://gh.halonice.com/https:/raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.m3u",
-      "epg": "https://epg.v1.mk/json?ch={name}&date={date}",
-      "logo": "https://epg.v1.mk/logo/{name}.png"
     },
     {
       "name": "Tianmu",
@@ -21003,22 +20904,6 @@
       "logo": "https://live.fanmingming.com/tv/{name}.png"
     },
     {
-      "name": "LIVE_home",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/joevess/IPTV/refs/heads/main/home.m3u8",
-      "playerType": 1,
-      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
-    },
-    {
-      "name": "LIVE_Gather",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/YanG-1989/m3u/refs/heads/main/Gather.m3u",
-      "playerType": 1,
-      "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={name}&date={date}",
-      "logo": "https://live.fanmingming.com/tv/{name}.png"
-    },
-    {
       "name": "24live",
       "type": 0,
       "url": "https://urlzf.zone.id/iptv-api/output/user_result.m3u",
@@ -21352,13 +21237,6 @@
       "ua": ""
     },
     {
-      "name": "🐬综合直播 海豚影视交流群 TG：@hshsjk9",
-      "type": 0,
-      "playerType": 2,
-      "ua": "okhttp",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/fleung49/star/refs/heads/main/mit"
-    },
-    {
       "name": "🐬风云源 海豚影视永久免费如有收费的都是骗子",
       "type": 0,
       "ua": "okhttp",
@@ -21382,12 +21260,6 @@
       "type": 0,
       "ua": "okhttp/5.3.2",
       "url": "./ext/interface.txt"
-    },
-    {
-      "name": "🐬地方直播2",
-      "type": 0,
-      "ua": "okhttp/5.3.2",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u"
     },
     {
       "name": "🐬薄荷直播",
@@ -21436,12 +21308,6 @@
       "type": 0,
       "ua": "okhttp",
       "url": "http://82.156.243.185:33389/fwc.m3u"
-    },
-    {
-      "name": "🐬国际TV",
-      "type": 0,
-      "ua": "okhttp",
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/xJEYDAin/iptv/main/output/all_merged.m3u"
     },
     {
       "name": "🐬裤佬TV",
@@ -21720,14 +21586,6 @@
       "name": "🍬联通🍬",
       "type": 0,
       "url": "./ext/联通",
-      "playerType": 2,
-      "ua": "okhttp/3.15",
-      "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}"
-    },
-    {
-      "name": "🍬电信🍬",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
       "playerType": 2,
       "ua": "okhttp/3.15",
       "epg": "https://epg.cdn.loc.cc/?ch={name}&date={date}"
@@ -22051,30 +21909,6 @@
       "type": 0,
       "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
-    },
-    {
-      "name": "Guovin·央视",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/lives/live_cctv.txt",
-      "epg": "https://live.fanmingming.cn/e.xml"
-    },
-    {
-      "name": "Guovin·卫视",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/lives/live_weishi.txt",
-      "epg": "https://live.fanmingming.cn/e.xml"
-    },
-    {
-      "name": "Guovin·港台",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/lives/live_gangtai.txt",
-      "epg": "https://live.fanmingming.cn/e.xml"
-    },
-    {
-      "name": "Guovin·其他",
-      "type": 0,
-      "url": "https://gh.halonice.com/https://raw.githubusercontent.com/hebijunge/tvbox-config/main/lives/live_other.txt",
-      "epg": "https://live.fanmingming.cn/e.xml"
     },
     {
       "name": "软件小哥哥",
@@ -22519,12 +22353,6 @@
       "type": 0,
       "ua": "okhttp",
       "url": "http://iptv.4666888.xyz/FYTV.txt"
-    },
-    {
-      "name": "飞扬源",
-      "type": 0,
-      "ua": "okhttp",
-      "url": "https://www.985pan.com/down.php/bf5e9607ff407fcdd71f63928ea5bc79.txt"
     },
     {
       "name": "港奥台国际",
