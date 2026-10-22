@@ -559,36 +559,6 @@
       "searchable": 0
     },
     {
-      "key": "ds05",
-      "name": "🍀都司资源",
-      "type": 0,
-      "api": "http://y.ds05.cn/zyapi.php",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1,
-      "categories": [
-        "电影",
-        "电视剧",
-        "综艺",
-        "动漫",
-        "动作片",
-        "爱情片",
-        "科幻片",
-        "恐怖片",
-        "战争片",
-        "喜剧片",
-        "纪录片",
-        "剧情片",
-        "大陆剧",
-        "港台剧",
-        "欧美剧",
-        "日韩剧",
-        "短剧",
-        "动画片"
-      ],
-      "group": "综合-采集站"
-    },
-    {
       "key": "鸭鸭资源",
       "name": "[322ms|我的] 鸭鸭资源",
       "type": 1,
@@ -14472,6 +14442,18 @@
       "group": "其他"
     },
     {
+      "key": "dbokutv_key",
+      "name": "🐼｜独播库",
+      "type": 3,
+      "api": "https://files.catbox.moe/gd1tos.js",
+      "style": {
+        "type": "rect",
+        "ratio": 1.33
+      },
+      "changeable": 1,
+      "group": "其他"
+    },
+    {
       "key": "cat_星辰影院",
       "name": "💝分享星辰",
       "type": 3,
@@ -21432,6 +21414,12 @@
       "url": "./ext/iptv.txt"
     },
     {
+      "name": "🐬juli",
+      "type": 0,
+      "ua": "okhttp/5.3.2",
+      "url": "https://files.catbox.moe/h3mb5a.txt"
+    },
+    {
       "name": "🐬小新TV",
       "type": 0,
       "ua": "okhttp/5.3.2",
@@ -22465,6 +22453,12 @@
       "type": 0,
       "ua": "okhttp/5.3.2",
       "url": "https://wget.la/https://raw.githubusercontent.com/vinkerq/iptv-api/refs/heads/master/iptv.txt"
+    },
+    {
+      "name": "juli",
+      "type": 0,
+      "ua": "okhttp/5.3.2",
+      "url": "https://files.catbox.moe/h3mb5a.txt"
     },
     {
       "name": "小新TV",
